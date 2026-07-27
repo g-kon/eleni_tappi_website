@@ -1,0 +1,373 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Services - Eleni Tappi Clinical Nutrition</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#ffb874",
+                    "on-surface-variant": "#554334",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#ff9500",
+                    "secondary-fixed": "#dee1ff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "secondary-fixed-dim": "#b9c3ff",
+                    "on-secondary-container": "#223589",
+                    "on-secondary-fixed": "#001258",
+                    "secondary-container": "#92a3fd",
+                    "tertiary-fixed-dim": "#6cd6df",
+                    "on-background": "#191c1d",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#002022",
+                    "primary-fixed": "#ffdcbf",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#dbc2ad",
+                    "surface": "#f8f9fa",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-primary-fixed-variant": "#6a3b00",
+                    "tertiary": "#006970",
+                    "primary": "#8c5000",
+                    "surface-container-high": "#e7e8e9",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#ffb874",
+                    "on-primary-fixed": "#2d1600",
+                    "surface-dim": "#d9dadb",
+                    "on-tertiary-fixed-variant": "#004f54",
+                    "surface-container": "#edeeef",
+                    "surface-variant": "#e1e3e4",
+                    "tertiary-fixed": "#8af3fc",
+                    "on-error-container": "#93000a",
+                    "outline": "#887361",
+                    "surface-bright": "#f8f9fa",
+                    "secondary": "#4658ac",
+                    "tertiary-container": "#52bec7",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#004a4f",
+                    "surface-container-low": "#f3f4f5",
+                    "inverse-surface": "#2e3132",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#2d3f93",
+                    "on-surface": "#191c1d",
+                    "surface-tint": "#8c5000",
+                    "on-primary-container": "#643700",
+                    "background": "#f8f9fa"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "1rem",
+                    "stack-sm": "0.5rem",
+                    "stack-md": "1.5rem",
+                    "section-padding": "5rem",
+                    "container-max": "1200px",
+                    "stack-lg": "3rem",
+                    "gutter": "1.5rem"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": [
+                            "Montserrat"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "headline-md": [
+                            "Montserrat"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "headline-lg": [
+                            "Montserrat"
+                    ],
+                    "headline-xl": [
+                            "Montserrat"
+                    ],
+                    "label-sm": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-xl": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-sm": [
+                            "14px",
+                            {
+                                    "lineHeight": "1",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+        .bg-pattern {
+            background-image: radial-gradient(#dee1ff 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        body.lang-en .lang-gr {
+            display: none !important;
+        }
+        body.lang-gr .lang-en {
+            display: none !important;
+        }
+    </style>
+<script>
+        function toggleLanguage() {
+            const body = document.body;
+            if (body.classList.contains('lang-en')) {
+                body.classList.remove('lang-en');
+                body.classList.add('lang-gr');
+                document.documentElement.lang = 'el';
+            } else {
+                body.classList.remove('lang-gr');
+                body.classList.add('lang-en');
+                document.documentElement.lang = 'en';
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased pt-24 lang-en">
+<!-- Top Navigation (Shared Component) -->
+<nav class="bg-surface shadow-sm docked full-width top-0 bg-surface/80 backdrop-blur-md fixed top-0 left-0 w-full z-50">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary" href="#">
+<span class="lang-en">Eleni Tappi</span>
+<span class="lang-gr">Ελένη Τάππη</span>
+</a>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-headline-md text-headline-md hover:text-primary-container transition-all scale-95 active:opacity-80 transition-transform" href="#">
+<span class="lang-en">Home</span><span class="lang-gr">Αρχική</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-headline-md text-headline-md hover:text-primary-container transition-all scale-95 active:opacity-80 transition-transform" href="#">
+<span class="lang-en">About</span><span class="lang-gr">Σχετικά</span>
+</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-headline-md text-headline-md hover:text-primary-container transition-all scale-95 active:opacity-80 transition-transform" href="#">
+<span class="lang-en">Services</span><span class="lang-gr">Υπηρεσίες</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-headline-md text-headline-md hover:text-primary-container transition-all scale-95 active:opacity-80 transition-transform" href="#">
+<span class="lang-en">Blog</span><span class="lang-gr">Ιστολόγιο</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-headline-md text-headline-md hover:text-primary-container transition-all scale-95 active:opacity-80 transition-transform" href="#">
+<span class="lang-en">Contact</span><span class="lang-gr">Επικοινωνία</span>
+</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="font-label-sm text-label-sm text-primary hover:text-primary-container transition-colors" onclick="toggleLanguage()">EN/GR</button>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-primary-container transition-colors" data-icon="language" onclick="toggleLanguage()">language</span>
+</div>
+</div>
+</nav>
+<!-- Header Section -->
+<header class="relative py-section-padding px-margin-mobile md:px-gutter max-w-container-max mx-auto overflow-hidden">
+<div class="absolute inset-0 bg-pattern opacity-50 z-0"></div>
+<div class="relative z-10 text-center max-w-3xl mx-auto space-y-stack-md">
+<h1 class="font-headline-xl text-headline-xl text-on-surface">
+<span class="lang-en">Clinical Nutrition Services</span>
+<span class="lang-gr">Υπηρεσίες Κλινικής Διατροφής</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+<span class="lang-en">Expert, evidence-based nutritional guidance tailored to your unique physiological needs. We bridge the gap between medical science and daily wellness.</span>
+<span class="lang-gr">Εξειδικευμένη, επιστημονικά τεκμηριωμένη διατροφική καθοδήγηση προσαρμοσμένη στις μοναδικές φυσιολογικές σας ανάγκες. Γεφυρώνουμε το χάσμα μεταξύ της ιατρικής επιστήμης και της καθημερινής ευεξίας.</span>
+</p>
+</div>
+</header>
+<!-- Main Content -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-padding space-y-section-padding">
+<!-- Bento Grid Layout for Services -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Service 1: Personalized Diet Plans -->
+<div class="glass-card rounded-xl p-8 col-span-1 lg:col-span-2 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm">
+<span class="lang-en">Core Service</span>
+<span class="lang-gr">Βασική Υπηρεσία</span>
+</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4 text-on-surface">
+<span class="lang-en">Personalized Diet Plans</span>
+<span class="lang-gr">Εξατομικευμένα Προγράμματα Διατροφής</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+<span class="lang-en">Bespoke meal planning designed around your specific metabolic rate, lifestyle constraints, and culinary preferences. Every plan is dynamically adjusted based on continuous progress tracking.</span>
+<span class="lang-gr">Εξατομικευμένος σχεδιασμός γευμάτων με βάση τον μεταβολικό σας ρυθμό, τους περιορισμούς του τρόπου ζωής και τις γαστρονομικές σας προτιμήσεις. Κάθε πρόγραμμα προσαρμόζεται δυναμικά με βάση τη συνεχή παρακολούθηση της προόδου.</span>
+</p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">
+<span class="lang-en">Macro &amp; Micro Nutrient Optimization</span>
+<span class="lang-gr">Βελτιστοποίηση Μακροθρεπτικών &amp; Μικροθρεπτικών Συστατικών</span>
+</span>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">
+<span class="lang-en">Lifestyle Integration</span>
+<span class="lang-gr">Ενσωμάτωση στον Τρόπο Ζωής</span>
+</span>
+</div>
+</div>
+<!-- Service 2: Weight Management -->
+<div class="bg-white rounded-xl p-8 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(140,80,0,0.08)] transition-all duration-300 group">
+<div class="absolute top-0 left-0 w-full h-1 bg-tertiary"></div>
+<div class="mb-6">
+<span class="material-symbols-outlined text-4xl text-tertiary" data-icon="monitor_weight">monitor_weight</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">
+<span class="lang-en">Weight Management</span>
+<span class="lang-gr">Διαχείριση Βάρους</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+<span class="lang-en">Sustainable strategies for weight loss, maintenance, or healthy weight gain, avoiding fad diets in favor of metabolic science.</span>
+<span class="lang-gr">Βιώσιμες στρατηγικές για απώλεια, διατήρηση ή υγιή αύξηση βάρους, αποφεύγοντας τις δίαιτες της μόδας προς όφελος της μεταβολικής επιστήμης.</span>
+</p>
+</div>
+<!-- Service 3: Clinical Conditions -->
+<div class="bg-white rounded-xl p-8 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(140,80,0,0.08)] transition-all duration-300">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<div class="mb-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="medical_services">medical_services</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">
+<span class="lang-en">Clinical Conditions</span>
+<span class="lang-gr">Κλινικές Παθήσεις</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+<span class="lang-en">Medical nutrition therapy for managing diabetes, hypertension, gastrointestinal disorders (IBS, Crohn's), and autoimmune conditions.</span>
+<span class="lang-gr">Ιατρική διατροφική θεραπεία για τη διαχείριση του διαβήτη, της υπέρτασης, των γαστρεντερικών διαταραχών (ΣΕΕ, Νόσος του Crohn) και των αυτοάνοσων παθήσεων.</span>
+</p>
+</div>
+<!-- Service 4: Sports Nutrition -->
+<div class="glass-card rounded-xl p-8 col-span-1 md:col-span-2 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+<div class="absolute top-0 left-0 w-full h-1 bg-tertiary"></div>
+<div class="flex flex-col md:flex-row gap-8">
+<div class="flex-1">
+<div class="mb-6">
+<span class="material-symbols-outlined text-4xl text-tertiary" data-icon="fitness_center">fitness_center</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4 text-on-surface">
+<span class="lang-en">Sports Nutrition</span>
+<span class="lang-gr">Αθλητική Διατροφή</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+<span class="lang-en">Advanced fueling strategies for athletes and active individuals. Enhance performance, accelerate recovery, and optimize body composition through precise nutritional timing.</span>
+<span class="lang-gr">Προηγμένες στρατηγικές τροφοδότησης για αθλητές και δραστήρια άτομα. Βελτιώστε την απόδοση, επιταχύνετε την ανάρρωση και βελτιστοποιήστε τη σύσταση του σώματος μέσω ακριβούς διατροφικού χρονισμού.</span>
+</p>
+<button class="bg-tertiary text-on-tertiary px-6 py-2 rounded-lg font-label-sm text-label-sm hover:bg-on-tertiary-fixed-variant transition-colors">
+<span class="lang-en">Learn More</span>
+<span class="lang-gr">Μάθετε Περισσότερα</span>
+</button>
+</div>
+<div class="flex-1 hidden md:block">
+<div class="bg-cover bg-center w-full h-full rounded-lg min-h-[200px]" data-alt="A professional, well-lit photograph of athletic training equipment alongside healthy fresh food components like berries, nuts, and a protein shaker. The setting is modern and clean, utilizing a bright, airy aesthetic with subtle hints of teal and orange lighting to evoke energy and health. The composition is balanced and highly detailed, reflecting a clinical approach to sports nutrition." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDbqgnDv1dW8F4UHtf1toPeqDxkwHDMOcWG4lZhk1Pybitp8Cm5Q-C6uHEE5cmAOUylWTV7bS9MoEKZEbZzunIo4aDAJzX3XkewOF0ouPDwLOEOINUU4bE0YWHCFFNg9iEYqYFbSPTRKCcGlF2uz23ea-BxyiqjzX9UUE_RWD9uLobXi2PQAKHt7GzODk43QoJ7_6A7HeARgpN2nDD2SVcVIisM3KrJYE1-aJXcRQviJZY8Onrs8qeXSTWkb-RgnEyTRBHnqmH0fNv')"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-low border-t border-outline-variant w-full py-section-padding px-gutter grid grid-cols-1 md:grid-cols-4 gap-stack-lg max-w-container-max mx-auto mt-section-padding">
+<div class="col-span-1 md:col-span-4 flex justify-between items-end border-b border-outline-variant pb-8 mb-8">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">
+<span class="lang-en">Eleni Tappi Clinical Nutrition</span>
+<span class="lang-gr">Ελένη Τάππη Κλινική Διατροφή</span>
+</span>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline decoration-primary underline-offset-4 opacity-90 hover:opacity-100 transition-opacity">
+<span class="lang-en">Phone: +357 99757799</span>
+<span class="lang-gr">Τηλέφωνο: +357 99757799</span>
+</span>
+<span class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline decoration-primary underline-offset-4 opacity-90 hover:opacity-100 transition-opacity">
+<span class="lang-en">Email: et.clinicalnutrition@gmail.com</span>
+<span class="lang-gr">Email: et.clinicalnutrition@gmail.com</span>
+</span>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline decoration-primary underline-offset-4 opacity-90 hover:opacity-100 transition-opacity">
+<span class="lang-en">Megalou Konstantinou 9, Athienou 7600, Cyprus</span>
+<span class="lang-gr">Μεγάλου Κωνσταντίνου 9, Αθηένου 7600, Κύπρος</span>
+</span>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline decoration-primary underline-offset-4 opacity-90 hover:opacity-100 transition-opacity flex flex-col items-start"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0PzD_dJmJY9K60eAc281tW6DC19OSzULxHDl6yq-W7ytMZvZw-IzMUXrb-mo48cotsURSyqjkw6GDWyhKlnWoa8TFmLi-1Ve-pPqcZjBq71KsRuS8_Pp8DNI29ZrTIQdVQwW2ytJRHvdOPjJjbJ8Xau0B3znuyMXx6InjxMBiwCO_axN2FEbwOcAMwVieR5GhZQk8o1mG7MKWVUevxru0fHZbTBaWvvbOD4pDj5GOxoENcrMTTw7GvudF-73vj5Gz5GRB5K9oGCm9" alt="GeSY Logo" class="h-8 w-auto mb-2 block">
+<span class="lang-en">GeSY Approved</span>
+<span class="lang-gr">Εγκεκριμένη από το ΓεΣΥ</span>
+</span>
+<span class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline decoration-primary underline-offset-4 opacity-90 hover:opacity-100 transition-opacity">
+<span class="lang-en">Cyprus Dietetic Association</span>
+<span class="lang-gr">Σύνδεσμος Διαιτολόγων Κύπρου</span>
+</span>
+</div>
+<div class="col-span-1 md:col-span-4 mt-8">
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+<span class="lang-en">© 2024 Eleni Tappi Clinical Nutrition. All rights reserved.</span>
+<span class="lang-gr">© 2024 Ελένη Τάππη Κλινική Διατροφή. Με την επιφύλαξη παντός δικαιώματος.</span>
+</p>
+</div>
+</footer>
+
+
+</body></html>
