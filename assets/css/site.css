@@ -1,0 +1,45 @@
+html {
+    scrollbar-gutter: stable;
+}
+
+html,
+html:lang(en),
+html:lang(gr) {
+    font-family: Inter, sans-serif;
+}
+
+/* Hide inactive language — never override display on visible text */
+html:lang(en) .lang-gr,
+html:lang(en) .lang-el {
+    display: none !important;
+}
+
+html:lang(gr) .lang-en {
+    display: none !important;
+}
+
+/* Headlines always use Montserrat for both languages */
+.font-headline-lg-mobile,
+.font-headline-md,
+.font-headline-lg,
+.font-headline-xl,
+h1,
+h2,
+h3,
+h4 {
+    font-family: Montserrat, Inter, sans-serif;
+}
+
+body,
+.font-body-md,
+.font-body-lg,
+.font-label-sm,
+p,
+a,
+span,
+button,
+label,
+input,
+textarea {
+    font-family: Inter, sans-serif;
+}
