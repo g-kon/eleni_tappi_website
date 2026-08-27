@@ -1,0 +1,19 @@
+---
+title_en: The Clinical Benefits of Olive Oil in Daily Nutrition
+title_gr: Τα Κλινικά Οφέλη του Ελαιολάδου στην Καθημερινή Διατροφή
+summary_en: Exploring the latest research on polyphenols and cardiovascular health, separating dietary myths from clinical facts.
+summary_gr: Εξερευνώντας την πιο πρόσφατη έρευνα για τις πολυφαινόλες και την καρδιαγγειακή υγεία, ξεχωρίζοντας τους διατροφικούς μύθους από τα κλινικά δεδομένα.
+category_en: Mediterranean Diet
+category_gr: Μεσογειακή Διατροφή
+date: 2024-10-24
+image: "https://lh3.googleusercontent.com/aida-public/AB6AXuABBlOiBv8q36k6q_NQmIqPijIBAVUkOJkV6OdE7qromCdAGGi8wKSDWwG6v7YiLkFNbnGvXgVzMuG4x4kCWik_NDwBaMy7WfelQPlHq8K7Of0BRFVPh_OHJ6RBnVOVAaV3Azco638enaz-HtepjvnGDrSEWHqRf8z-VF6h8zU1kaSmViC-qToNTKuYr7hQu_TALx3CT28f1R3UqqE6JVxiW7OaOfm2jSvYVxbBdGkwPegw_ZyUVT7CXXzAWzUU8likqT_zpTEoaslF"
+published: true
+---
+
+## English
+
+Olive oil is a central part of the Mediterranean dietary pattern. Its monounsaturated fats and naturally occurring polyphenols can support a balanced, heart-conscious eating pattern when used in place of less beneficial fats.
+
+## Ελληνικά
+
+Το ελαιόλαδο αποτελεί βασικό μέρος της μεσογειακής διατροφής. Τα μονοακόρεστα λιπαρά και οι φυσικές πολυφαινόλες του μπορούν να υποστηρίξουν μια ισορροπημένη διατροφή με επίκεντρο την καρδιά, όταν αντικαθιστούν λιγότερο ωφέλιμα λιπαρά.

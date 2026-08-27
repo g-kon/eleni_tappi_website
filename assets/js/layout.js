@@ -193,16 +193,9 @@
 
         articles.forEach(function (article) {
             function openArticle() {
-                const title = article.querySelector("h2");
-                if (!title) {
-                    return;
+                if (article.dataset.articleUrl) {
+                    window.location.href = article.dataset.articleUrl;
                 }
-                const lang = document.documentElement.lang === "gr" ? ".lang-gr" : ".lang-en";
-                const visibleTitle = title.querySelector(lang);
-                const text = visibleTitle ? visibleTitle.textContent.trim() : title.textContent.trim();
-                window.alert(text + "\\n\\n" + (document.documentElement.lang === "gr"
-                    ? "Το πλήρες άρθρο θα είναι σύντομα διαθέσιμο."
-                    : "The full article will be available soon."));
             }
             article.addEventListener("click", openArticle);
             article.addEventListener("keydown", function (event) {
@@ -212,6 +205,13 @@
                 }
             });
         });
+
+        const cmsLogin = document.querySelector("[data-cms-login]");
+        if (cmsLogin) {
+            cmsLogin.addEventListener("click", function () {
+                window.location.href = "https://github.com/login?return_to=%2Fg-kon%2Feleni_tappi_website%2Fissues";
+            });
+        }
     }
 
     function initScrollNav() {

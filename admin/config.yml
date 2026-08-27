@@ -1,0 +1,64 @@
+backend:
+  name: github
+  repo: g-kon/eleni_tappi_website
+  branch: main
+  base_url: https://YOUR-OAUTH-HOST.example.com
+  auth_endpoint: auth
+
+media_folder: "media/blog"
+public_folder: "/eleni_tappi_website/media/blog"
+locale: en
+publish_mode: editorial_workflow
+site_url: https://g-kon.github.io/eleni_tappi_website/
+display_url: https://g-kon.github.io/eleni_tappi_website/
+
+collections:
+  - name: blog
+    label: Blog posts
+    label_singular: Blog post
+    folder: blog/_posts
+    create: true
+    preview_path: generated/{{slug}}.html
+    extension: md
+    format: frontmatter
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: ["date", "title_en", "category_en"]
+    fields:
+      - label: English title
+        name: title_en
+        widget: string
+      - label: Greek title
+        name: title_gr
+        widget: string
+      - label: English summary
+        name: summary_en
+        widget: text
+      - label: Greek summary
+        name: summary_gr
+        widget: text
+      - label: English article
+        name: body_en
+        widget: markdown
+      - label: Greek article
+        name: body_gr
+        widget: markdown
+      - label: English category
+        name: category_en
+        widget: string
+      - label: Greek category
+        name: category_gr
+        widget: string
+      - label: Publication date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DD"
+      - label: Cover image
+        name: image
+        widget: image
+        required: true
+        hint: This image appears on the blog summary card.
+      - label: Published
+        name: published
+        widget: boolean
+        default: true
+        hint: Only published posts should be shown on the public blog.
