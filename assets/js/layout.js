@@ -118,6 +118,102 @@
         setLanguage(document.documentElement.lang === "gr" ? "en" : "gr");
     }
 
+    function initContactForm() {
+        const form = document.querySelector('[data-contact-form="true"]');
+        if (!form) {
+            return;
+        }
+
+        const button = form.querySelector('button[type="submit"]');
+        const notice = document.createElement("p");
+        notice.className = "mt-4 font-body-md";
+        form.insertAdjacentElement("afterend", notice);
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            if (button) {
+                button.disabled = true;
+            }
+            notice.textContent = document.documentElement.lang === "gr"
+                ? "Αποστολή μηνύματος..."
+                : "Sending your message...";
+            notice.className = "mt-4 font-body-md text-on-surface-variant";
+
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(form),
+                headers: { Accept: "application/json" }
+            }).then(function (response) {
+                if (!response.ok) {
+                    throw new Error("Form submission failed");
+                }
+                form.reset();
+                notice.textContent = document.documentElement.lang === "gr"
+                    ? "Το μήνυμα στάλθηκε με επιτυχία."
+                    : "Your message was sent successfully.";
+                notice.className = "mt-4 font-body-md text-tertiary";
+            }).catch(function () {
+                notice.textContent = document.documentElement.lang === "gr"
+                    ? "Η αποστολή απέτυχε. Παρακαλώ δοκιμάστε ξανά."
+                    : "The message could not be sent. Please try again.";
+                notice.className = "mt-4 font-body-md text-primary";
+            }).finally(function () {
+                if (button) {
+                    button.disabled = false;
+                }
+            });
+        });
+    }
+
+    function initBlogFilters() {
+        const articles = Array.from(document.querySelectorAll("[data-article]"));
+        const filters = document.querySelectorAll("[data-category-filter]");
+        if (!articles.length || !filters.length) {
+            return;
+        }
+
+        function applyFilter(category) {
+            articles.forEach(function (article) {
+                article.hidden = category && article.dataset.category !== category;
+            });
+        }
+
+        filters.forEach(function (filter) {
+            function select() {
+                applyFilter(filter.dataset.categoryFilter || "");
+            }
+            filter.addEventListener("click", select);
+            filter.addEventListener("keydown", function (event) {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    select();
+                }
+            });
+        });
+
+        articles.forEach(function (article) {
+            function openArticle() {
+                const title = article.querySelector("h2");
+                if (!title) {
+                    return;
+                }
+                const lang = document.documentElement.lang === "gr" ? ".lang-gr" : ".lang-en";
+                const visibleTitle = title.querySelector(lang);
+                const text = visibleTitle ? visibleTitle.textContent.trim() : title.textContent.trim();
+                window.alert(text + "\\n\\n" + (document.documentElement.lang === "gr"
+                    ? "Το πλήρες άρθρο θα είναι σύντομα διαθέσιμο."
+                    : "The full article will be available soon."));
+            }
+            article.addEventListener("click", openArticle);
+            article.addEventListener("keydown", function (event) {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    openArticle();
+                }
+            });
+        });
+    }
+
     function initScrollNav() {
         const nav = document.getElementById("main-nav");
         if (!nav) {
@@ -155,6 +251,8 @@
         }
 
         initScrollNav();
+        initContactForm();
+        initBlogFilters();
     }
 
     window.SiteLayout = {
