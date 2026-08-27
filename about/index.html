@@ -1,123 +1,318 @@
-<!DOCTYPE html><html class="light" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>About - Eleni Tappi Clinical Nutrition</title>
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap&amp;subset=greek,latin" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config" src="../assets/js/tailwind-config.js"></script>
-<link href="../assets/css/site.css" rel="stylesheet">
-</head>
-<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col pt-24" data-page="about" data-base="../">
-<div id="site-header"></div>
-<main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-section-padding md:px-gutter">
-<!-- Hero Section -->
-<section class="grid grid-cols-1 md:grid-cols-12 gap-stack-lg mb-section-padding items-center">
-<div class="md:col-span-7 flex flex-col space-y-stack-md">
-<h1 class="font-headline-xl text-headline-xl text-on-surface">
-<span class="lang-en">About Eleni Tappi</span>
-<span class="lang-gr">Σχετικά με την Ελένη Τάππη</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-<span class="lang-en">Dedicated to providing evidence-based, compassionate nutritional care to help you achieve your health goals.</span>
-<span class="lang-gr">Αφοσιωμένη στην παροχή τεκμηριωμένης, συμπονετικής διατροφικής φροντίδας για να σας βοηθήσει να επιτύχετε τους στόχους υγείας σας.</span>
-</p>
-</div>
-<div class="md:col-span-5 flex justify-center md:justify-end relative">
-<div class="absolute inset-0 bg-primary-container/10 rounded-full blur-3xl -z-10 transform translate-x-4 translate-y-4"></div>
-<img class="rounded-2xl shadow-lg border border-surface-container-highest object-cover w-full max-w-md aspect-[3/4]" data-alt="A professional, approachable portrait of a female clinical nutritionist in a modern, bright office setting. She is wearing a white lab coat over a smart-casual outfit, smiling warmly at the camera. The background is soft and out of focus, featuring light clinical elements, subtle citrus orange accents, and natural sunlight filtering through a window, conveying trust, expertise, and vitality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu2MBOkEnE3YF2_aWA6zZR7NAfSM73hhHrzGvN6f_lyyPgYCjwInIHwnqO023qzBHG7dYSIz9VKF9-vHWqMaeOHDDRQSRC9qTMSw4YjT6hk1QOdEu5Rc9rHC0eGI5qLii798A4ETfSsPYIIkHQHCL1KyHusIVGT7LrWQPXc1IZvOW6-ZvCnY8Yiky4cnbc0e6Np_dIuYz0tXGHHG1vNX1M8UHEd_D3dAMp0IdJuJd8YrZFIxDT1b_t3SjsvFb8ipWZJOv01mwCJaAz">
-</div>
-</section>
-<!-- Bento Grid Layout for Details -->
-<section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-section-padding">
-<!-- Bio EN/GR -->
-<div class="md:col-span-2 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-8 flex flex-col space-y-stack-md">
-<div class="flex items-center justify-between border-b border-surface-container-highest pb-4">
-<h2 class="font-headline-lg text-headline-lg text-primary">
-<span class="lang-en">Biography</span>
-<span class="lang-gr">Βιογραφικό</span>
-</h2>
-<div class="flex gap-2">
-<span class="font-label-sm text-label-sm bg-primary text-on-primary px-3 py-1 rounded-full cursor-pointer" onclick="SiteLayout.setLanguage('en')">EN</span>
-<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-3 py-1 rounded-full cursor-pointer hover:bg-surface-container-high" onclick="SiteLayout.setLanguage('gr')">GR</span>
-</div>
-</div>
-<div class="space-y-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
-<div class="lang-en space-y-4">
-<p class="">Eleni Tappi is a registered clinical dietitian and nutritionist with a profound commitment to enhancing individual health through tailored, evidence-based nutritional strategies. With a foundation built on rigorous academic training and continuous professional development, she bridges the gap between medical science and daily dietary habits.</p>
-<p class="">Her approach is characterized by empathy and practicality, recognizing that sustainable health changes require personalized plans that fit seamlessly into her clients' lifestyles. She specializes in clinical nutrition, addressing complex health conditions with precise dietary interventions while fostering a positive relationship with food.</p>
-<p class="">Believing in the power of education, Eleni empowers her patients not just with meal plans, but with the knowledge to make informed choices, ensuring long-term wellness and vitality.</p>
-</div>
-<div class="lang-gr space-y-4">
-<p class="">Η Ελένη Τάππη είναι εγγεγραμμένη κλινική διαιτολόγος και διατροφολόγος με βαθιά δέσμευση στη βελτίωση της ατομικής υγείας μέσω εξατομικευμένων, τεκμηριωμένων διατροφικών στρατηγικών. Με θεμέλια χτισμένα σε αυστηρή ακαδημαϊκή εκπαίδευση και συνεχή επαγγελματική ανάπτυξη, γεφυρώνει το χάσμα μεταξύ της ιατρικής επιστήμης και των καθημερινών διατροφικών συνηθειών.</p>
-<p class="">Η προσέγγισή της χαρακτηρίζεται από ενσυναίσθηση και πρακτικότητα, αναγνωρίζοντας ότι οι βιώσιμες αλλαγές στην υγεία απαιτούν εξατομικευμένα σχέδια που ενσωματώνονται απρόσκοπτα στον τρόπο ζωής των πελατών της. Ειδικεύεται στην κλινική διατροφή, αντιμετωπίζοντας πολύπλοκες καταστάσεις υγείας με ακριβείς διατροφικές παρεμβάσεις, ενώ παράλληλα καλλιεργεί μια θετική σχέση με το φαγητό.</p>
-<p class="">Πιστεύοντας στη δύναμη της εκπαίδευσης, η Ελένη ενδυναμώνει τους ασθενείς της όχι μόνο με προγράμματα γευμάτων, αλλά και με τη γνώση να κάνουν ενημερωμένες επιλογές, εξασφαλίζοντας μακροπρόθεσμη ευεξία και ζωτικότητα.</p>
-</div>
-</div>
-</div>
-<!-- Credentials Sidebar -->
-<div class="md:col-span-1 flex flex-col gap-6">
-<!-- Education Card -->
-<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-6 border-t-4 border-t-primary">
-<h3 class="font-headline-md text-headline-md text-on-surface mb-4 flex items-center gap-2">
-<span class="material-symbols-outlined text-primary">school</span>
-<span class="lang-en">Education</span><span class="lang-gr">Εκπαίδευση</span>
-</h3>
-<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
-<span class="lang-en"><strong>MSc Clinical Nutrition</strong><br><span class="text-sm">University Name</span></span>
-<span class="lang-gr"><strong>MSc Κλινική Διατροφή</strong><br><span class="text-sm">Όνομα Πανεπιστημίου</span></span>
-</li>
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
-<span class="lang-en"><strong>BSc Nutrition &amp; Dietetics</strong><br><span class="text-sm">University Name</span></span>
-<span class="lang-gr"><strong>BSc Διατροφή &amp; Διαιτολογία</strong><br><span class="text-sm">Όνομα Πανεπιστημίου</span></span>
-</li>
-</ul>
-</div>
-<!-- Registration Card -->
-<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-6 border-t-4 border-t-tertiary">
-<h3 class="font-headline-md text-headline-md text-on-surface mb-4 flex items-center gap-2">
-<span class="material-symbols-outlined text-tertiary">verified</span>
-<span class="lang-en">Credentials</span><span class="lang-gr">Πιστοποιήσεις</span>
-</h3>
-<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
-<li class="flex items-center gap-3 bg-surface p-3 rounded-lg border border-surface-container-highest">
-<img class="w-10 h-10 object-contain" data-alt="A clean, minimalist graphic icon representing the GeSY (General Healthcare System of Cyprus) logo, featuring a blue and white color scheme in a modern, corporate style suitable for a medical context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt2I3o89QBtofLk8LBjpHNyxzZixlbmmPzJokEMEYvu3CksxQIZIQdzEWV8kjuKxsDs9QwDg3siQ57BQUjuMIqGhh7SZrlxa-lop8E-wyVbRgYndZa8FP-NlPYfkNNL4JJ93BRe-jfvfQla7bRLwH1-dNJOw57eEC8J8pMaw_hSBxtaoNZ32HFI0yUDqGGx4Z75oA9oDOLuiaGqBwUKaA5jgvyzs7JoGksxqa5wU-DlefHfQdSqvfJ7A7qlxAT5vkTWp_56StiR6xp">
-<span class="font-semibold text-on-surface lang-en">GeSY Approved<br><span class="font-normal text-sm text-on-surface-variant">Registered Dietitian</span></span>
-<span class="font-semibold text-on-surface lang-gr">Εγκεκριμένη από το ΓεΣΥ<br><span class="font-normal text-sm text-on-surface-variant">Εγγεγραμμένη Διαιτολόγος</span></span>
-</li>
-<li class="flex items-center gap-3 bg-surface p-3 rounded-lg border border-surface-container-highest">
-<div class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container">
-<span class="material-symbols-outlined">health_and_safety</span>
-</div>
-<span class="font-semibold text-on-surface lang-en">Member of CyDNA<br><span class="font-normal text-sm text-on-surface-variant">Cyprus Dietetic &amp; Nutrition Association</span></span>
-<span class="font-semibold text-on-surface lang-gr">Μέλος του ΣΕΕΔ<br><span class="font-normal text-sm text-on-surface-variant">Σύνδεσμος Διαιτολόγων και Διατροφολόγων Κύπρου</span></span>
-</li>
-</ul>
-</div>
-</div>
-</section>
-<!-- Philosophy Section -->
-<section class="bg-primary/5 rounded-2xl p-8 md:p-12 border border-primary/10 relative overflow-hidden">
-<div class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 opacity-10">
-<span class="material-symbols-outlined text-[200px] text-primary">psychiatry</span>
-</div>
-<div class="relative z-10 max-w-3xl">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-6">
-<span class="lang-en">Care Philosophy</span>
-<span class="lang-gr">Φιλοσοφία Φροντίδας</span>
-</h2>
-<blockquote class="font-body-lg text-body-lg text-on-surface-variant italic border-l-4 border-primary pl-6">
-<span class="lang-en">"True health is not a rigid prescription, but a sustainable harmony between medical science and individual lifestyle. My goal is to transform clinical knowledge into practical, empowering daily choices for every patient."</span>
-<span class="lang-gr">"Η πραγματική υγεία δεν είναι μια άκαμπτη συνταγή, αλλά μια βιώσιμη αρμονία μεταξύ της ιατρικής επιστήμης και του ατομικού τρόπου ζωής. Στόχος μου είναι να μετατρέψω την κλινική γνώση σε πρακτικές, ενδυναμωτικές καθημερινές επιλογές για κάθε ασθενή."</span>
-</blockquote>
-</div>
-</section>
-</main>
-<div id="site-footer"></div>
-<script src="../assets/js/layout.js"></script>
-</body></html>
+<!DOCTYPE html>
+<html class="light" lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>About - Eleni Tappi Clinical Nutrition</title>
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap&amp;subset=greek,latin"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+         rel="stylesheet"
+      />
+      <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+      <script
+         id="tailwind-config"
+         src="../assets/js/tailwind-config.js"
+      ></script>
+      <link href="../assets/css/site.css" rel="stylesheet" />
+   </head>
+   <body
+      class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col pt-24"
+      data-page="about"
+      data-base="../"
+   >
+      <div id="site-header"></div>
+      <main
+         class="flex-grow w-full max-w-container-max mx-auto px-gutter py-section-padding md:px-gutter"
+      >
+         <!-- Hero Section -->
+         <section
+            class="grid grid-cols-1 md:grid-cols-12 gap-stack-lg mb-section-padding items-center"
+         >
+            <div class="md:col-span-7 flex flex-col space-y-stack-md">
+               <h1 class="font-headline-xl text-headline-xl text-on-surface">
+                  <span class="lang-en">About Eleni Tappi</span>
+                  <span class="lang-gr">Σχετικά με την Ελένη Τάππη</span>
+               </h1>
+               <p
+                  class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl"
+               >
+                  <span class="lang-en"
+                     >Dedicated to providing evidence-based, compassionate
+                     nutritional care to help you achieve your health
+                     goals.</span
+                  >
+                  <span class="lang-gr"
+                     >Αφοσιωμένη στην παροχή τεκμηριωμένης, συμπονετικής
+                     διατροφικής φροντίδας για να σας βοηθήσει να επιτύχετε τους
+                     στόχους υγείας σας.</span
+                  >
+               </p>
+            </div>
+            <div
+               class="md:col-span-5 flex justify-center md:justify-end relative"
+            >
+               <div
+                  class="absolute inset-0 bg-primary-container/10 rounded-full blur-3xl -z-10 transform translate-x-4 translate-y-4"
+               ></div>
+               <img
+                  class="rounded-2xl shadow-lg border border-surface-container-highest object-cover w-full max-w-md aspect-[3/4]"
+                  data-alt="A professional, approachable portrait of a female clinical nutritionist in a modern, bright office setting. She is wearing a white lab coat over a smart-casual outfit, smiling warmly at the camera. The background is soft and out of focus, featuring light clinical elements, subtle citrus orange accents, and natural sunlight filtering through a window, conveying trust, expertise, and vitality."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu2MBOkEnE3YF2_aWA6zZR7NAfSM73hhHrzGvN6f_lyyPgYCjwInIHwnqO023qzBHG7dYSIz9VKF9-vHWqMaeOHDDRQSRC9qTMSw4YjT6hk1QOdEu5Rc9rHC0eGI5qLii798A4ETfSsPYIIkHQHCL1KyHusIVGT7LrWQPXc1IZvOW6-ZvCnY8Yiky4cnbc0e6Np_dIuYz0tXGHHG1vNX1M8UHEd_D3dAMp0IdJuJd8YrZFIxDT1b_t3SjsvFb8ipWZJOv01mwCJaAz"
+               />
+            </div>
+         </section>
+         <!-- Bento Grid Layout for Details -->
+         <section
+            class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-section-padding"
+         >
+            <!-- Bio EN/GR -->
+            <div
+               class="md:col-span-2 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-8 flex flex-col space-y-stack-md"
+            >
+               <div
+                  class="flex items-center justify-between border-b border-surface-container-highest pb-4"
+               >
+                  <h2 class="font-headline-lg text-headline-lg text-primary">
+                     <span class="lang-en">Biography</span>
+                     <span class="lang-gr">Βιογραφικό</span>
+                  </h2>
+                  <div class="flex gap-2">
+                     <span
+                        class="font-label-sm text-label-sm bg-primary text-on-primary px-3 py-1 rounded-full cursor-pointer"
+                        onclick="SiteLayout.setLanguage('en')"
+                        >EN</span
+                     >
+                     <span
+                        class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-3 py-1 rounded-full cursor-pointer hover:bg-surface-container-high"
+                        onclick="SiteLayout.setLanguage('gr')"
+                        >GR</span
+                     >
+                  </div>
+               </div>
+               <div
+                  class="space-y-4 font-body-md text-body-md text-on-surface-variant leading-relaxed"
+               >
+                  <div class="lang-en space-y-4">
+                     <p class="">
+                        Eleni Tappi is a registered clinical dietitian and
+                        nutritionist with a profound commitment to enhancing
+                        individual health through tailored, evidence-based
+                        nutritional strategies. With a foundation built on
+                        rigorous academic training and continuous professional
+                        development, she bridges the gap between medical science
+                        and daily dietary habits.
+                     </p>
+                     <p class="">
+                        Her approach is characterized by empathy and
+                        practicality, recognizing that sustainable health
+                        changes require personalized plans that fit seamlessly
+                        into her clients' lifestyles. She specializes in
+                        clinical nutrition, addressing complex health conditions
+                        with precise dietary interventions while fostering a
+                        positive relationship with food.
+                     </p>
+                     <p class="">
+                        Believing in the power of education, Eleni empowers her
+                        patients not just with meal plans, but with the
+                        knowledge to make informed choices, ensuring long-term
+                        wellness and vitality.
+                     </p>
+                  </div>
+                  <div class="lang-gr space-y-4">
+                     <p class="">
+                        Η Ελένη Τάππη είναι εγγεγραμμένη κλινική διαιτολόγος και
+                        διατροφολόγος με βαθιά δέσμευση στη βελτίωση της
+                        ατομικής υγείας μέσω εξατομικευμένων, τεκμηριωμένων
+                        διατροφικών στρατηγικών. Με θεμέλια χτισμένα σε αυστηρή
+                        ακαδημαϊκή εκπαίδευση και συνεχή επαγγελματική ανάπτυξη,
+                        γεφυρώνει το χάσμα μεταξύ της ιατρικής επιστήμης και των
+                        καθημερινών διατροφικών συνηθειών.
+                     </p>
+                     <p class="">
+                        Η προσέγγισή της χαρακτηρίζεται από ενσυναίσθηση και
+                        πρακτικότητα, αναγνωρίζοντας ότι οι βιώσιμες αλλαγές
+                        στην υγεία απαιτούν εξατομικευμένα σχέδια που
+                        ενσωματώνονται απρόσκοπτα στον τρόπο ζωής των πελατών
+                        της. Ειδικεύεται στην κλινική διατροφή, αντιμετωπίζοντας
+                        πολύπλοκες καταστάσεις υγείας με ακριβείς διατροφικές
+                        παρεμβάσεις, ενώ παράλληλα καλλιεργεί μια θετική σχέση
+                        με το φαγητό.
+                     </p>
+                     <p class="">
+                        Πιστεύοντας στη δύναμη της εκπαίδευσης, η Ελένη
+                        ενδυναμώνει τους ασθενείς της όχι μόνο με προγράμματα
+                        γευμάτων, αλλά και με τη γνώση να κάνουν ενημερωμένες
+                        επιλογές, εξασφαλίζοντας μακροπρόθεσμη ευεξία και
+                        ζωτικότητα.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- Credentials Sidebar -->
+            <div class="md:col-span-1 flex flex-col gap-6">
+               <!-- Education Card -->
+               <div
+                  class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-6 border-t-4 border-t-primary"
+               >
+                  <h3
+                     class="font-headline-md text-headline-md text-on-surface mb-4 flex items-center gap-2"
+                  >
+                     <span class="material-symbols-outlined text-primary"
+                        >school</span
+                     >
+                     <span class="lang-en">Education</span
+                     ><span class="lang-gr">Εκπαίδευση</span>
+                  </h3>
+                  <ul
+                     class="space-y-3 font-body-md text-body-md text-on-surface-variant"
+                  >
+                     <li class="flex items-start gap-2">
+                        <span
+                           class="material-symbols-outlined text-secondary text-sm mt-1"
+                           >check_circle</span
+                        >
+                        <span class="lang-en"
+                           ><strong>MSc Clinical Nutrition</strong><br /><span
+                              class="text-sm"
+                              >University Name</span
+                           ></span
+                        >
+                        <span class="lang-gr"
+                           ><strong>MSc Κλινική Διατροφή</strong><br /><span
+                              class="text-sm"
+                              >Όνομα Πανεπιστημίου</span
+                           ></span
+                        >
+                     </li>
+                     <li class="flex items-start gap-2">
+                        <span
+                           class="material-symbols-outlined text-secondary text-sm mt-1"
+                           >check_circle</span
+                        >
+                        <span class="lang-en"
+                           ><strong>BSc Nutrition &amp; Dietetics</strong
+                           ><br /><span class="text-sm"
+                              >University Name</span
+                           ></span
+                        >
+                        <span class="lang-gr"
+                           ><strong>BSc Διατροφή &amp; Διαιτολογία</strong
+                           ><br /><span class="text-sm"
+                              >Όνομα Πανεπιστημίου</span
+                           ></span
+                        >
+                     </li>
+                  </ul>
+               </div>
+               <!-- Registration Card -->
+               <div
+                  class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-6 border-t-4 border-t-tertiary"
+               >
+                  <h3
+                     class="font-headline-md text-headline-md text-on-surface mb-4 flex items-center gap-2"
+                  >
+                     <span class="material-symbols-outlined text-tertiary"
+                        >verified</span
+                     >
+                     <span class="lang-en">Credentials</span
+                     ><span class="lang-gr">Πιστοποιήσεις</span>
+                  </h3>
+                  <ul
+                     class="space-y-4 font-body-md text-body-md text-on-surface-variant"
+                  >
+                     <li
+                        class="flex items-center gap-3 bg-surface p-3 rounded-lg border border-surface-container-highest"
+                     >
+                        <img
+                           class="w-10 h-10 object-contain"
+                           data-alt="A clean, minimalist graphic icon representing the GeSY (General Healthcare System of Cyprus) logo, featuring a blue and white color scheme in a modern, corporate style suitable for a medical context."
+                           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt2I3o89QBtofLk8LBjpHNyxzZixlbmmPzJokEMEYvu3CksxQIZIQdzEWV8kjuKxsDs9QwDg3siQ57BQUjuMIqGhh7SZrlxa-lop8E-wyVbRgYndZa8FP-NlPYfkNNL4JJ93BRe-jfvfQla7bRLwH1-dNJOw57eEC8J8pMaw_hSBxtaoNZ32HFI0yUDqGGx4Z75oA9oDOLuiaGqBwUKaA5jgvyzs7JoGksxqa5wU-DlefHfQdSqvfJ7A7qlxAT5vkTWp_56StiR6xp"
+                        />
+                        <span class="font-semibold text-on-surface lang-en"
+                           >GeSY Approved<br /><span
+                              class="font-normal text-sm text-on-surface-variant"
+                              >Registered Dietitian</span
+                           ></span
+                        >
+                        <span class="font-semibold text-on-surface lang-gr"
+                           >Εγκεκριμένη από το ΓεΣΥ<br /><span
+                              class="font-normal text-sm text-on-surface-variant"
+                              >Εγγεγραμμένη Διαιτολόγος</span
+                           ></span
+                        >
+                     </li>
+                     <li
+                        class="flex items-center gap-3 bg-surface p-3 rounded-lg border border-surface-container-highest"
+                     >
+                        <div
+                           class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container"
+                        >
+                           <span class="material-symbols-outlined"
+                              >health_and_safety</span
+                           >
+                        </div>
+                        <span class="font-semibold text-on-surface lang-en"
+                           >Member of CyDNA<br /><span
+                              class="font-normal text-sm text-on-surface-variant"
+                              >Cyprus Dietetic &amp; Nutrition Association</span
+                           ></span
+                        >
+                        <span class="font-semibold text-on-surface lang-gr"
+                           >Μέλος του ΣΕΕΔ<br /><span
+                              class="font-normal text-sm text-on-surface-variant"
+                              >Σύνδεσμος Διαιτολόγων και Διατροφολόγων
+                              Κύπρου</span
+                           ></span
+                        >
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <!-- Philosophy Section -->
+         <section
+            class="bg-primary/5 rounded-2xl p-8 md:p-12 border border-primary/10 relative overflow-hidden"
+         >
+            <div
+               class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 opacity-10"
+            >
+               <span class="material-symbols-outlined text-[200px] text-primary"
+                  >psychiatry</span
+               >
+            </div>
+            <div class="relative z-10 max-w-3xl">
+               <h2 class="font-headline-lg text-headline-lg text-primary mb-6">
+                  <span class="lang-en">Care Philosophy</span>
+                  <span class="lang-gr">Φιλοσοφία Φροντίδας</span>
+               </h2>
+               <blockquote
+                  class="font-body-lg text-body-lg text-on-surface-variant italic border-l-4 border-primary pl-6"
+               >
+                  <span class="lang-en"
+                     >"True health is not a rigid prescription, but a
+                     sustainable harmony between medical science and individual
+                     lifestyle. My goal is to transform clinical knowledge into
+                     practical, empowering daily choices for every
+                     patient."</span
+                  >
+                  <span class="lang-gr"
+                     >"Η πραγματική υγεία δεν είναι μια άκαμπτη συνταγή, αλλά
+                     μια βιώσιμη αρμονία μεταξύ της ιατρικής επιστήμης και του
+                     ατομικού τρόπου ζωής. Στόχος μου είναι να μετατρέψω την
+                     κλινική γνώση σε πρακτικές, ενδυναμωτικές καθημερινές
+                     επιλογές για κάθε ασθενή."</span
+                  >
+               </blockquote>
+            </div>
+         </section>
+      </main>
+      <div id="site-footer"></div>
+      <script src="../assets/js/layout.js"></script>
+   </body>
+</html>

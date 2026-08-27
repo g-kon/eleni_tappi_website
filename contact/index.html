@@ -1,176 +1,350 @@
-<!DOCTYPE html><html class="light" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Contact | Eleni Tappi Clinical Nutrition</title>
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap&amp;subset=greek,latin" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config" src="../assets/js/tailwind-config.js"></script>
-<link href="../assets/css/site.css" rel="stylesheet">
-<style>
-        .material-symbols-outlined {
-          font-family: 'Material Symbols Outlined';
-          font-weight: normal;
-          font-style: normal;
-          font-size: 24px;
-          line-height: 1;
-          letter-spacing: normal;
-          text-transform: none;
-          display: inline-block;
-          white-space: nowrap;
-          word-wrap: normal;
-          direction: ltr;
-          -webkit-font-feature-settings: 'liga';
-          -webkit-font-smoothing: antialiased;
-        }
-    </style>
-</head>
-<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col pt-24" data-page="contact" data-base="../">
-<div id="site-header"></div>
-<!-- Main Content -->
-<main class="flex-grow pb-section-padding px-gutter md:px-0 max-w-container-max mx-auto w-full">
-<div class="text-center mb-16">
-<h1 class="font-headline-xl text-headline-xl text-primary mb-4">
-<span class="lang-en">Get in Touch</span><span class="lang-gr">Επικοινωνία</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-<span class="lang-en">Ready to start your wellness journey? We're here to help you achieve your nutritional goals. Reach out for consultations or inquiries.</span>
-<span class="lang-gr">Είστε έτοιμοι να ξεκινήσετε το ταξίδι ευεξίας σας; Είμαστε εδώ για να σας βοηθήσουμε να πετύχετε τους διατροφικούς σας στόχους. Επικοινωνήστε για διαβουλεύσεις ή απορίες.</span>
-</p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
-<!-- Contact Form Area -->
-<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30">
-<h2 class="font-headline-md text-headline-md text-on-surface mb-6">
-<span class="lang-en">Send a Message</span><span class="lang-gr">Στείλτε Μήνυμα</span>
-</h2>
-<form class="space-y-6" onsubmit="event.preventDefault(); alert(document.documentElement.lang === 'gr' ? 'Το μήνυμα στάλθηκε με επιτυχία!' : 'Message sent successfully!');">
-<div>
-<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2" for="name">
-<span class="lang-en">Full Name</span><span class="lang-gr">Ονοματεπώνυμο</span>
-</label>
-<input class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-secondary focus:ring-0 px-4 py-3 rounded-t-md transition-colors text-on-surface font-body-md text-body-md" id="name" name="name" placeholder="John Doe" required="" type="text">
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div>
-<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2" for="email">Email</label>
-<input class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-secondary focus:ring-0 px-4 py-3 rounded-t-md transition-colors text-on-surface font-body-md text-body-md" id="email" name="email" placeholder="john@example.com" required="" type="email">
-</div>
-<div>
-<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2" for="phone">
-<span class="lang-en">Phone</span><span class="lang-gr">Τηλέφωνο</span>
-</label>
-<input class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-secondary focus:ring-0 px-4 py-3 rounded-t-md transition-colors text-on-surface font-body-md text-body-md" id="phone" name="phone" placeholder="+357 ..." type="tel">
-</div>
-</div>
-<div>
-<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2" for="subject">
-<span class="lang-en">Subject</span><span class="lang-gr">Θέμα</span>
-</label>
-<select class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-secondary focus:ring-0 px-4 py-3 rounded-t-md transition-colors text-on-surface font-body-md text-body-md" id="subject" name="subject">
-<optgroup lang="en">
-<option>General Inquiry</option>
-<option>Book a Consultation</option>
-<option>Meal Plan Questions</option>
-</optgroup>
-<optgroup lang="el">
-<option>Γενική Ερώτηση</option>
-<option>Κράτηση Ραντεβού</option>
-<option>Ερωτήσεις για Πρόγραμμα Διατροφής</option>
-</optgroup>
-</select>
-</div>
-<div>
-<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2" for="message">
-<span class="lang-en">Message</span><span class="lang-gr">Μήνυμα</span>
-</label>
-<textarea class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-secondary focus:ring-0 px-4 py-3 rounded-t-md transition-colors text-on-surface font-body-md text-body-md resize-none" id="message" name="message" placeholder="" required="" rows="4"></textarea>
-</div>
-<button class="w-full md:w-auto bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm py-3 px-8 rounded-lg shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center justify-center gap-2" type="submit">
-<span class="lang-en">Send Message</span><span class="lang-gr">Αποστολή Μηνύματος</span>
-<span class="material-symbols-outlined" style="font-size: 18px;">send</span>
-</button>
-</form>
-</div>
-<!-- Contact Information & Map -->
-<div class="space-y-8">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Contact Details Card -->
-<div class="bg-surface-container-lowest p-6 rounded-xl border-t-4 border-t-primary shadow-sm h-full flex flex-col justify-center">
-<div class="flex items-start gap-4 mb-6">
-<div class="bg-primary-fixed p-3 rounded-full text-on-primary-fixed flex-shrink-0">
-<span class="material-symbols-outlined">call</span>
-</div>
-<div>
-<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">
-<span class="lang-en">Phone</span><span class="lang-gr">Τηλέφωνο</span>
-</h3>
-<a class="font-headline-md text-headline-md text-on-surface hover:text-primary transition-colors block" href="tel:+35799757799">+357 99757799</a>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="bg-secondary-fixed p-3 rounded-full text-on-secondary-fixed flex-shrink-0">
-<span class="material-symbols-outlined">mail</span>
-</div>
-<div>
-<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Email</h3>
-<a class="font-body-md text-body-md text-on-surface hover:text-secondary transition-colors block break-all" href="mailto:et.clinicalnutrition@gmail.com">et.clinicalnutrition@gmail.com</a>
-</div>
-</div>
-</div>
-<!-- Address & Social Card -->
-<div class="bg-surface-container-lowest p-6 rounded-xl border-t-4 border-t-tertiary shadow-sm h-full flex flex-col justify-center">
-<div class="flex items-start gap-4 mb-6">
-<div class="bg-tertiary-fixed p-3 rounded-full text-on-tertiary-fixed flex-shrink-0">
-<span class="material-symbols-outlined">location_on</span>
-</div>
-<div>
-<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">
-<span class="lang-en">Visit Clinic</span><span class="lang-gr">Επισκεφθείτε την Κλινική</span>
-</h3>
-<address class="not-italic font-body-md text-body-md text-on-surface">
-<span class="lang-en">Megalou Konstantinou 9,<br>Athienou 7600,<br>Cyprus</span>
-<span class="lang-gr">Μεγάλου Κωνσταντίνου 9,<br>Αθηένου 7600,<br>Κύπρος</span>
-</address>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="bg-surface-variant p-3 rounded-full text-on-surface-variant flex-shrink-0">
-<span class="material-symbols-outlined">thumb_up</span>
-</div>
-<div>
-<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">
-<span class="lang-en">Social</span><span class="lang-gr">Κοινωνικά Δίκτυα</span>
-</h3>
-<a class="inline-flex items-center gap-1 font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="https://www.facebook.com/et.clinicalnutrition/" rel="noopener noreferrer" target="_blank">
-<span class="lang-en">Facebook Page</span><span class="lang-gr">Σελίδα Facebook</span>
-<span class="material-symbols-outlined" style="font-size: 16px;">open_in_new</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<!-- Google Map Placeholder -->
-<div class="w-full h-80 bg-surface-variant rounded-xl overflow-hidden relative shadow-inner group border border-outline-variant/50">
-<!-- Map Placeholder Image -->
-<img class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" data-alt="A highly detailed overhead map view of Athienou, Cyprus, styled in a clean, modern, light-mode interface. The map features soft gray roads, subtle green parks, and a prominent vibrant orange map marker pin indicating a clinical location. The aesthetic is crisp, professional, and consistent with a minimalist corporate healthcare brand." data-location="Athienou, Cyprus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOLdIawzYb8MWcwOH7SyN_HnDVEdWgIr3TPqyJiAlIM-iBDIevtvuQqDP674NMeI299Wx87HZR5-joCFr-C5wQBFrcuIRzfiFq1kXXWCZ9zjQqAKjos6VObgXuTdPlvbCF-B5qV51FcRdQsRUX3srVJ0hOr1KC41KVyLcdR2-_ShCbCzjniGmgrA7F6wKSci5i156_oMas6I2iQctHDl6_1aQ7TJ7lTMlHjLqtYwE9SRgCKwTN_UFGffTqAdiXILkWDQCKqJcEtbH2">
-<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-<div class="bg-surface/90 backdrop-blur-sm p-4 rounded-lg shadow-lg text-center flex flex-col items-center border border-outline-variant/30">
-<span class="material-symbols-outlined text-primary mb-2 text-4xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
-<span class="font-headline-md text-headline-md text-on-surface block">
-<span class="lang-en">Clinic Location</span><span class="lang-gr">Τοποθεσία Κλινικής</span>
-</span>
-<span class="font-body-md text-body-md text-on-surface-variant">
-<span class="lang-en">Athienou, Cyprus</span><span class="lang-gr">Αθηένου, Κύπρος</span>
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main>
-<div id="site-footer"></div>
-<script src="../assets/js/layout.js"></script>
-</body></html>
+<!DOCTYPE html>
+<html class="light" lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>Contact | Eleni Tappi Clinical Nutrition</title>
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap&amp;subset=greek,latin"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+         rel="stylesheet"
+      />
+      <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+      <script
+         id="tailwind-config"
+         src="../assets/js/tailwind-config.js"
+      ></script>
+      <link href="../assets/css/site.css" rel="stylesheet" />
+      <style>
+         .material-symbols-outlined {
+            font-family: "Material Symbols Outlined";
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: "liga";
+            -webkit-font-smoothing: antialiased;
+         }
+      </style>
+   </head>
+   <body
+      class="bg-background text-on-background font-body-md min-h-screen flex flex-col pt-24"
+      data-page="contact"
+      data-base="../"
+   >
+      <div id="site-header"></div>
+      <!-- Main Content -->
+      <main
+         class="flex-grow pb-section-padding px-gutter md:px-0 max-w-container-max mx-auto w-full"
+      >
+         <div class="text-center mb-16">
+            <h1 class="font-headline-xl text-headline-xl text-primary mb-4">
+               <span class="lang-en">Get in Touch</span
+               ><span class="lang-gr">Επικοινωνία</span>
+            </h1>
+            <p
+               class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto"
+            >
+               <span class="lang-en"
+                  >Ready to start your wellness journey? We're here to help you
+                  achieve your nutritional goals. Reach out for consultations or
+                  inquiries.</span
+               >
+               <span class="lang-gr"
+                  >Είστε έτοιμοι να ξεκινήσετε το ταξίδι ευεξίας σας; Είμαστε
+                  εδώ για να σας βοηθήσουμε να πετύχετε τους διατροφικούς σας
+                  στόχους. Επικοινωνήστε για διαβουλεύσεις ή απορίες.</span
+               >
+            </p>
+         </div>
+         <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start"
+         >
+            <!-- Contact Form Area -->
+            <div
+               class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30"
+            >
+               <h2
+                  class="font-headline-md text-headline-md text-on-surface mb-6"
+               >
+                  <span class="lang-en">Send a Message</span
+                  ><span class="lang-gr">Στείλτε Μήνυμα</span>
+               </h2>
+               <form
+                  class="space-y-6"
+                  onsubmit="event.preventDefault(); alert(document.documentElement.lang === 'gr' ? 'Το μήνυμα στάλθηκε με επιτυχία!' : 'Message sent successfully!');"
+               >
+                  <div>
+                     <label
+                        class="block font-label-sm text-label-sm text-on-surface-variant mb-2"
+                        for="name"
+                     >
+                        <span class="lang-en">Full Name</span
+                        ><span class="lang-gr">Ονοματεπώνυμο</span>
+                     </label>
+                     <input
+                        class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-secondary focus:ring-0 px-4 py-3 rounded-t-md transition-colors text-on-surface font-body-md text-body-md"
+                        id="name"
+                        name="name"
+                        placeholder="John Doe"
+                        required=""
+                        type="text"
+                     />
+                  </div>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <div>
+                        <label
+                           class="block font-label-sm text-label-sm text-on-surface-variant mb-2"
+                           for="email"
+                           >Email</label
+                        >
+                        <input
+                           class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-secondary focus:ring-0 px-4 py-3 rounded-t-md transition-colors text-on-surface font-body-md text-body-md"
+                           id="email"
+                           name="email"
+                           placeholder="john@example.com"
+                           required=""
+                           type="email"
+                        />
+                     </div>
+                     <div>
+                        <label
+                           class="block font-label-sm text-label-sm text-on-surface-variant mb-2"
+                           for="phone"
+                        >
+                           <span class="lang-en">Phone</span
+                           ><span class="lang-gr">Τηλέφωνο</span>
+                        </label>
+                        <input
+                           class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-secondary focus:ring-0 px-4 py-3 rounded-t-md transition-colors text-on-surface font-body-md text-body-md"
+                           id="phone"
+                           name="phone"
+                           placeholder="+357 ..."
+                           type="tel"
+                        />
+                     </div>
+                  </div>
+                  <div>
+                     <label
+                        class="block font-label-sm text-label-sm text-on-surface-variant mb-2"
+                        for="subject"
+                     >
+                        <span class="lang-en">Subject</span
+                        ><span class="lang-gr">Θέμα</span>
+                     </label>
+                     <select
+                        class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-secondary focus:ring-0 px-4 py-3 rounded-t-md transition-colors text-on-surface font-body-md text-body-md"
+                        id="subject"
+                        name="subject"
+                     >
+                        <optgroup lang="en">
+                           <option>General Inquiry</option>
+                           <option>Book a Consultation</option>
+                           <option>Meal Plan Questions</option>
+                        </optgroup>
+                        <optgroup lang="el">
+                           <option>Γενική Ερώτηση</option>
+                           <option>Κράτηση Ραντεβού</option>
+                           <option>Ερωτήσεις για Πρόγραμμα Διατροφής</option>
+                        </optgroup>
+                     </select>
+                  </div>
+                  <div>
+                     <label
+                        class="block font-label-sm text-label-sm text-on-surface-variant mb-2"
+                        for="message"
+                     >
+                        <span class="lang-en">Message</span
+                        ><span class="lang-gr">Μήνυμα</span>
+                     </label>
+                     <textarea
+                        class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-secondary focus:ring-0 px-4 py-3 rounded-t-md transition-colors text-on-surface font-body-md text-body-md resize-none"
+                        id="message"
+                        name="message"
+                        placeholder=""
+                        required=""
+                        rows="4"
+                     ></textarea>
+                  </div>
+                  <button
+                     class="w-full md:w-auto bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm py-3 px-8 rounded-lg shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center justify-center gap-2"
+                     type="submit"
+                  >
+                     <span class="lang-en">Send Message</span
+                     ><span class="lang-gr">Αποστολή Μηνύματος</span>
+                     <span
+                        class="material-symbols-outlined"
+                        style="font-size: 18px"
+                        >send</span
+                     >
+                  </button>
+               </form>
+            </div>
+            <!-- Contact Information & Map -->
+            <div class="space-y-8">
+               <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <!-- Contact Details Card -->
+                  <div
+                     class="bg-surface-container-lowest p-6 rounded-xl border-t-4 border-t-primary shadow-sm h-full flex flex-col justify-center"
+                  >
+                     <div class="flex items-start gap-4 mb-6">
+                        <div
+                           class="bg-primary-fixed p-3 rounded-full text-on-primary-fixed flex-shrink-0"
+                        >
+                           <span class="material-symbols-outlined">call</span>
+                        </div>
+                        <div>
+                           <h3
+                              class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider"
+                           >
+                              <span class="lang-en">Phone</span
+                              ><span class="lang-gr">Τηλέφωνο</span>
+                           </h3>
+                           <a
+                              class="font-headline-md text-headline-md text-on-surface hover:text-primary transition-colors block"
+                              href="tel:+35799757799"
+                              >+357 99757799</a
+                           >
+                        </div>
+                     </div>
+                     <div class="flex items-start gap-4">
+                        <div
+                           class="bg-secondary-fixed p-3 rounded-full text-on-secondary-fixed flex-shrink-0"
+                        >
+                           <span class="material-symbols-outlined">mail</span>
+                        </div>
+                        <div>
+                           <h3
+                              class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider"
+                           >
+                              Email
+                           </h3>
+                           <a
+                              class="font-body-md text-body-md text-on-surface hover:text-secondary transition-colors block break-all"
+                              href="mailto:et.clinicalnutrition@gmail.com"
+                              >et.clinicalnutrition@gmail.com</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Address & Social Card -->
+                  <div
+                     class="bg-surface-container-lowest p-6 rounded-xl border-t-4 border-t-tertiary shadow-sm h-full flex flex-col justify-center"
+                  >
+                     <div class="flex items-start gap-4 mb-6">
+                        <div
+                           class="bg-tertiary-fixed p-3 rounded-full text-on-tertiary-fixed flex-shrink-0"
+                        >
+                           <span class="material-symbols-outlined"
+                              >location_on</span
+                           >
+                        </div>
+                        <div>
+                           <h3
+                              class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider"
+                           >
+                              <span class="lang-en">Visit Clinic</span
+                              ><span class="lang-gr"
+                                 >Επισκεφθείτε την Κλινική</span
+                              >
+                           </h3>
+                           <address
+                              class="not-italic font-body-md text-body-md text-on-surface"
+                           >
+                              <span class="lang-en"
+                                 >Megalou Konstantinou 9,<br />Athienou 7600,<br />Cyprus</span
+                              >
+                              <span class="lang-gr"
+                                 >Μεγάλου Κωνσταντίνου 9,<br />Αθηένου 7600,<br />Κύπρος</span
+                              >
+                           </address>
+                        </div>
+                     </div>
+                     <div class="flex items-start gap-4">
+                        <div
+                           class="bg-surface-variant p-3 rounded-full text-on-surface-variant flex-shrink-0"
+                        >
+                           <span class="material-symbols-outlined"
+                              >thumb_up</span
+                           >
+                        </div>
+                        <div>
+                           <h3
+                              class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider"
+                           >
+                              <span class="lang-en">Social</span
+                              ><span class="lang-gr">Κοινωνικά Δίκτυα</span>
+                           </h3>
+                           <a
+                              class="inline-flex items-center gap-1 font-body-md text-body-md text-secondary hover:text-primary transition-colors"
+                              href="https://www.facebook.com/et.clinicalnutrition/"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                           >
+                              <span class="lang-en">Facebook Page</span
+                              ><span class="lang-gr">Σελίδα Facebook</span>
+                              <span
+                                 class="material-symbols-outlined"
+                                 style="font-size: 16px"
+                                 >open_in_new</span
+                              >
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Google Map Placeholder -->
+               <div
+                  class="w-full h-80 bg-surface-variant rounded-xl overflow-hidden relative shadow-inner group border border-outline-variant/50"
+               >
+                  <!-- Map Placeholder Image -->
+                  <img
+                     class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                     data-alt="A highly detailed overhead map view of Athienou, Cyprus, styled in a clean, modern, light-mode interface. The map features soft gray roads, subtle green parks, and a prominent vibrant orange map marker pin indicating a clinical location. The aesthetic is crisp, professional, and consistent with a minimalist corporate healthcare brand."
+                     data-location="Athienou, Cyprus"
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOLdIawzYb8MWcwOH7SyN_HnDVEdWgIr3TPqyJiAlIM-iBDIevtvuQqDP674NMeI299Wx87HZR5-joCFr-C5wQBFrcuIRzfiFq1kXXWCZ9zjQqAKjos6VObgXuTdPlvbCF-B5qV51FcRdQsRUX3srVJ0hOr1KC41KVyLcdR2-_ShCbCzjniGmgrA7F6wKSci5i156_oMas6I2iQctHDl6_1aQ7TJ7lTMlHjLqtYwE9SRgCKwTN_UFGffTqAdiXILkWDQCKqJcEtbH2"
+                  />
+                  <div
+                     class="absolute inset-0 flex items-center justify-center pointer-events-none"
+                  >
+                     <div
+                        class="bg-surface/90 backdrop-blur-sm p-4 rounded-lg shadow-lg text-center flex flex-col items-center border border-outline-variant/30"
+                     >
+                        <span
+                           class="material-symbols-outlined text-primary mb-2 text-4xl"
+                           style="font-variation-settings: &quot;FILL&quot; 1"
+                           >location_on</span
+                        >
+                        <span
+                           class="font-headline-md text-headline-md text-on-surface block"
+                        >
+                           <span class="lang-en">Clinic Location</span
+                           ><span class="lang-gr">Τοποθεσία Κλινικής</span>
+                        </span>
+                        <span
+                           class="font-body-md text-body-md text-on-surface-variant"
+                        >
+                           <span class="lang-en">Athienou, Cyprus</span
+                           ><span class="lang-gr">Αθηένου, Κύπρος</span>
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <div id="site-footer"></div>
+      <script src="../assets/js/layout.js"></script>
+   </body>
+</html>

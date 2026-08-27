@@ -1,217 +1,420 @@
-<!DOCTYPE html><html class="light" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Blog - Eleni Tappi Clinical Nutrition</title>
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap&amp;subset=greek,latin" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config" src="../assets/js/tailwind-config.js"></script>
-<link href="../assets/css/site.css" rel="stylesheet">
-<style>
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-    </style>
-</head>
-<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col pt-24" data-page="blog" data-base="../">
-<div id="site-header"></div>
-<!-- Main Content Area -->
-<main class="flex-grow pb-section-padding px-gutter max-w-container-max mx-auto w-full">
-<!-- Header & Controls -->
-<div class="mb-stack-lg flex flex-col md:flex-row md:items-end justify-between gap-stack-md border-b border-outline-variant/30 pb-6">
-<div>
-<h1 class="font-headline-xl text-headline-xl text-on-surface mb-2">
-<span class="lang-en">Nutrition Insights</span>
-<span class="lang-gr">Συμβουλές Διατροφής</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-<span class="lang-en">Evidence-based clinical nutrition articles, wellness tips, and clinic updates.</span>
-<span class="lang-gr">Επιστημονικά τεκμηριωμένα άρθρα κλινικής διατροφής, συμβουλές ευεξίας και ενημερώσεις της κλινικής.</span>
-</p>
-</div>
-<!-- Client-side Language Toggle for feed specifically -->
-<div class="flex items-center bg-surface-container-low p-1 rounded-full border border-outline-variant/50 hidden">
-<button class="px-4 py-2 rounded-full font-label-sm text-label-sm text-on-primary bg-primary shadow-sm transition-all" id="btn-lang-en" onclick="SiteLayout.setLanguage('en')">English</button>
-<button class="px-4 py-2 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high transition-all" id="btn-lang-gr" onclick="SiteLayout.setLanguage('gr')">Ελληνικά</button>
-</div>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg relative">
-<!-- Blog Feed (Bento-style Grid) -->
-<div class="lg:col-span-8 lg:col-start-1 grid grid-cols-1 md:grid-cols-2 gap-6" id="blog-feed">
-<!-- Article Card 1 (Featured) -->
-<article class="md:col-span-2 group cursor-pointer bg-surface rounded-xl overflow-hidden border border-outline-variant/40 hover:shadow-md transition-shadow duration-300 flex flex-col md:flex-row h-full min-h-[300px]">
-<div class="md:w-1/2 h-48 md:h-auto relative overflow-hidden">
-<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A brightly lit modern kitchen countertop with fresh Mediterranean ingredients like olive oil, tomatoes, and leafy greens. The lighting is soft and natural, emphasizing a clean, clinical yet approachable wellness aesthetic. High quality, professional photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABBlOiBv8q36k6q_NQmIqPijIBAVUkOJkV6OdE7qromCdAGGi8wKSDWwG6v7YiLkFNbnGvXgVzMuG4x4kCWik_NDwBaMy7WfelQPlHq8K7Of0BRFVPh_OHJ6RBnVOVAaV3Azco638enaz-HtepjvnGDrSEWHqRf8z-VF6h8zU1kaSmViC-qToNTKuYr7hQu_TALx3CT28f1R3UqqE6JVxiW7OaOfm2jSvYVxbBdGkwPegw_ZyUVT7CXXzAWzUU8likqT_zpTEoaslF">
-</div>
-<div class="md:w-1/2 p-6 flex flex-col justify-center bg-white relative">
-<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
-<div class="flex items-center gap-3 mb-3">
-<span class="bg-primary-fixed/30 text-on-primary-fixed-variant px-3 py-1 rounded-full font-label-sm text-label-sm">
-<span class="lang-en">Mediterranean Diet</span>
-<span class="lang-gr">Μεσογειακή Διατροφή</span>
-</span>
-<span class="text-on-surface-variant font-label-sm text-label-sm">
-<span class="lang-en">Oct 24, 2024</span>
-<span class="lang-gr">24 Οκτ, 2024</span>
-</span>
-</div>
-<h2 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">
-<span class="lang-en">The Clinical Benefits of Olive Oil in Daily Nutrition</span>
-<span class="lang-gr">Τα Κλινικά Οφέλη του Ελαιολάδου στην Καθημερινή Διατροφή</span>
-</h2>
-<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4 flex-grow">
-<span class="lang-en">Exploring the latest research on polyphenols and cardiovascular health, separating dietary myths from clinical facts.</span>
-<span class="lang-gr">Εξερευνώντας την πιο πρόσφατη έρευνα για τις πολυφαινόλες και την καρδιαγγειακή υγεία, ξεχωρίζοντας τους διατροφικούς μύθους από τα κλινικά δεδομένα.</span>
-</p>
-<div class="flex items-center text-primary font-label-sm text-label-sm gap-1 mt-auto">
-<span class="lang-en">Read Article</span>
-<span class="lang-gr">Διαβάστε το Άρθρο</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</div>
-</div>
-</article>
-<!-- Article Card 2 -->
-<article class="group cursor-pointer bg-white rounded-xl overflow-hidden border border-outline-variant/40 hover:shadow-md transition-shadow duration-300 flex flex-col">
-<div class="h-48 relative overflow-hidden">
-<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close up of a professional clinical setting showing a nutritionist's desk with a clean white notebook, a pen, and a glass of water. Soft, airy, and trustworthy atmosphere indicating medical authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCuPT6dDU74xd0CKSr5zRKZXaju-42h_eXlv6_U11jyo1lYSp3PidLdVkBuNbyadKozQwAKEr_B2FfwJPoc-mkJxUg5cGckgLry0aa0lD2SAqacbK1AM1OIfUe1Evehe_DCwGaAR-aD1qjCDFoBNoKLqkSrZ68ZtKgetwW8AXD47DP5udD-rMziA238jCjjK1CZPVsGyHA_-Ar4t0pyfIDQy1OzfVKQTSB65OcNswcU7iJ8H5mShPwyXcGITfGiehhxBIxw6f2pirw">
-</div>
-<div class="p-5 flex flex-col flex-grow">
-<div class="flex items-center gap-3 mb-3">
-<span class="bg-tertiary/10 text-tertiary px-3 py-1 rounded-full font-label-sm text-label-sm">
-<span class="lang-en">Gut Health</span>
-<span class="lang-gr">Υγεία του Εντέρου</span>
-</span>
-<span class="text-on-surface-variant font-label-sm text-label-sm">
-<span class="lang-en">Oct 18, 2024</span>
-<span class="lang-gr">18 Οκτ, 2024</span>
-</span>
-</div>
-<h2 class="font-headline-md text-[20px] leading-tight text-on-surface mb-3 group-hover:text-primary transition-colors">
-<span class="lang-en">Understanding the Microbiome</span>
-<span class="lang-gr">Κατανοώντας το Μικροβίωμα</span>
-</h2>
-<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4 flex-grow">
-<span class="lang-en">How probiotics and prebiotics actively shape metabolic function and mental clarity.</span>
-<span class="lang-gr">Πώς τα προβιοτικά και τα πρεβιοτικά διαμορφώνουν ενεργά τη μεταβολική λειτουργία και τη διανοητική διαύγεια.</span>
-</p>
-</div>
-</article>
-<!-- Article Card 3 (Previously GR only) -->
-<article class="group cursor-pointer bg-white rounded-xl overflow-hidden border border-outline-variant/40 hover:shadow-md transition-shadow duration-300 flex flex-col">
-<div class="h-48 relative overflow-hidden">
-<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A balanced plate of food featuring lean proteins, whole grains, and vibrant vegetables on a minimalist white table setting. Corporate modern aesthetic, emphasizing health and precision in portion sizes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4P7y4K9g6VCY3TLymiIT99bhbnTw7vqgaV0qf8i_bsQaOPXjPNDVlDn-5Qv239WDMPYPLyT3WK5gwxAtXQSwpgibEFZAsfSZZkmvOBuI62_xIAdPzz_q2lrl-wf5C8I0cLwMcNsn8kG1lPEZEPFnsSXz2PpAB8hoNOWYBVp_YmuITr-urrueFgieCCYg2X5XFR73-lQiozhB1g9Jkh_YXjIc99wCFjXx0EtV_50uofndpap65MzL_MHbOwbrMLC6UENoy5quEbNkT">
-</div>
-<div class="p-5 flex flex-col flex-grow">
-<div class="flex items-center gap-3 mb-3">
-<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full font-label-sm text-label-sm">
-<span class="lang-en">Clinical Nutrition</span>
-<span class="lang-gr">Κλινική Διατροφή</span>
-</span>
-<span class="text-on-surface-variant font-label-sm text-label-sm">
-<span class="lang-en">Oct 15, 2024</span>
-<span class="lang-gr">15 Οκτ, 2024</span>
-</span>
-</div>
-<h2 class="font-headline-md text-[20px] leading-tight text-on-surface mb-3 group-hover:text-primary transition-colors">
-<span class="lang-en">Type 2 Diabetes Management</span>
-<span class="lang-gr">Διαχείριση Διαβήτη Τύπου 2</span>
-</h2>
-<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4 flex-grow">
-<span class="lang-en">Nutrition strategies to stabilize blood sugar through personalized plans.</span>
-<span class="lang-gr">Στρατηγικές διατροφής για τη σταθεροποίηση του σακχάρου στο αίμα μέσω εξατομικευμένων πλάνων.</span>
-</p>
-</div>
-</article>
-<!-- Article Card 4 -->
-<article class="group cursor-pointer bg-white rounded-xl overflow-hidden border border-outline-variant/40 hover:shadow-md transition-shadow duration-300 flex flex-col">
-<div class="p-5 flex flex-col flex-grow relative border-t-4 border-tertiary">
-<div class="flex items-center gap-3 mb-3">
-<span class="bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full font-label-sm text-label-sm">
-<span class="lang-en">Research Update</span>
-<span class="lang-gr">Ενημέρωση Έρευνας</span>
-</span>
-<span class="text-on-surface-variant font-label-sm text-label-sm">
-<span class="lang-en">Oct 10, 2024</span>
-<span class="lang-gr">10 Οκτ, 2024</span>
-</span>
-</div>
-<h2 class="font-headline-md text-[20px] leading-tight text-on-surface mb-3 group-hover:text-primary transition-colors">
-<span class="lang-en">New Guidelines on Vitamin D Synthesis</span>
-<span class="lang-gr">Νέες Κατευθυντήριες Γραμμές για τη Σύνθεση της Βιταμίνης D</span>
-</h2>
-<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4 flex-grow">
-<span class="lang-en">A review of the 2024 European protocols regarding supplementation during winter months.</span>
-<span class="lang-gr">Μια ανασκόπηση των ευρωπαϊκών πρωτοκόλλων του 2024 σχετικά με τα συμπληρώματα κατά τους χειμερινούς μήνες.</span>
-</p>
-</div>
-</article>
-</div>
-<!-- Sidebar / Meta -->
-<aside class="lg:col-span-3 lg:col-start-10 flex flex-col gap-6 sticky top-28 h-fit">
-<!-- Categories -->
-<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/40">
-<h3 class="font-headline-md text-[18px] text-on-surface border-b border-outline-variant/30 pb-2 mb-4">
-<span class="lang-en">Categories</span>
-<span class="lang-gr">Κατηγορίες</span>
-</h3>
-<ul class="flex flex-col gap-3 font-body-md text-body-md text-on-surface-variant">
-<li class="flex justify-between items-center hover:text-primary cursor-pointer transition-colors">
-<span class="">
-<span class="lang-en">Clinical Nutrition</span>
-<span class="lang-gr">Κλινική Διατροφή</span>
-</span>
-<span class="bg-surface-container p-1 rounded text-xs">12</span>
-</li>
-<li class="flex justify-between items-center hover:text-primary cursor-pointer transition-colors">
-<span class="">
-<span class="lang-en">Gut Health</span>
-<span class="lang-gr">Υγεία του Εντέρου</span>
-</span>
-<span class="bg-surface-container p-1 rounded text-xs">8</span>
-</li>
-<li class="flex justify-between items-center hover:text-primary cursor-pointer transition-colors">
-<span class="">
-<span class="lang-en">Mediterranean Diet</span>
-<span class="lang-gr">Μεσογειακή Διατροφή</span>
-</span>
-<span class="bg-surface-container p-1 rounded text-xs">15</span>
-</li>
-</ul>
-</div>
-<!-- CMS Indicator -->
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/40 relative overflow-hidden">
-<div class="absolute -right-4 -top-4 opacity-5">
-<span class="material-symbols-outlined" style="font-size: 100px;">article</span>
-</div>
-<div class="relative z-10 flex flex-col gap-4">
-<div>
-<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">
-<span class="lang-en">System Status</span>
-<span class="lang-gr">Κατάσταση Συστήματος</span>
-</p>
-<div class="flex items-center gap-2 text-on-surface font-body-md">
-<span class="w-2 h-2 rounded-full bg-tertiary"></span>
-<span class="lang-en">Powered by GitHub Issues</span>
-<span class="lang-gr">Με την υποστήριξη του GitHub Issues</span>
-</div>
-</div>
-<hr class="border-outline-variant/30">
-<div>
-<p class="font-body-md text-sm text-on-surface-variant mb-3">
-<span class="lang-en">Owner restricted access for content management.</span>
-<span class="lang-gr">Περιορισμένη πρόσβαση κατόχου για διαχείριση περιεχομένου.</span>
-</p>
-<button class="w-full flex items-center justify-center gap-2 border border-secondary text-secondary hover:bg-secondary hover:text-on-secondary py-2 px-4 rounded-lg font-label-sm transition-colors">
-<span class="material-symbols-outlined text-sm">login</span>
-<span class="lang-en">Sign In via GitHub</span>
-<span class="lang-gr">Σύνδεση μέσω GitHub</span>
-</button>
-</div>
-</div>
-</div>
-</aside>
-</div>
-</main>
-<div id="site-footer"></div>
-<script src="../assets/js/layout.js"></script>
-</body></html>
+<!DOCTYPE html>
+<html class="light" lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>Blog - Eleni Tappi Clinical Nutrition</title>
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap&amp;subset=greek,latin"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+         rel="stylesheet"
+      />
+      <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+      <script
+         id="tailwind-config"
+         src="../assets/js/tailwind-config.js"
+      ></script>
+      <link href="../assets/css/site.css" rel="stylesheet" />
+      <style>
+         .material-symbols-outlined {
+            font-variation-settings:
+               "FILL" 0,
+               "wght" 400,
+               "GRAD" 0,
+               "opsz" 24;
+         }
+      </style>
+   </head>
+   <body
+      class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col pt-24"
+      data-page="blog"
+      data-base="../"
+   >
+      <div id="site-header"></div>
+      <!-- Main Content Area -->
+      <main
+         class="flex-grow pb-section-padding px-gutter max-w-container-max mx-auto w-full"
+      >
+         <!-- Header & Controls -->
+         <div
+            class="mb-stack-lg flex flex-col md:flex-row md:items-end justify-between gap-stack-md border-b border-outline-variant/30 pb-6"
+         >
+            <div>
+               <h1
+                  class="font-headline-xl text-headline-xl text-on-surface mb-2"
+               >
+                  <span class="lang-en">Nutrition Insights</span>
+                  <span class="lang-gr">Συμβουλές Διατροφής</span>
+               </h1>
+               <p
+                  class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl"
+               >
+                  <span class="lang-en"
+                     >Evidence-based clinical nutrition articles, wellness tips,
+                     and clinic updates.</span
+                  >
+                  <span class="lang-gr"
+                     >Επιστημονικά τεκμηριωμένα άρθρα κλινικής διατροφής,
+                     συμβουλές ευεξίας και ενημερώσεις της κλινικής.</span
+                  >
+               </p>
+            </div>
+            <!-- Client-side Language Toggle for feed specifically -->
+            <div
+               class="flex items-center bg-surface-container-low p-1 rounded-full border border-outline-variant/50 hidden"
+            >
+               <button
+                  class="px-4 py-2 rounded-full font-label-sm text-label-sm text-on-primary bg-primary shadow-sm transition-all"
+                  id="btn-lang-en"
+                  onclick="SiteLayout.setLanguage('en')"
+               >
+                  English
+               </button>
+               <button
+                  class="px-4 py-2 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high transition-all"
+                  id="btn-lang-gr"
+                  onclick="SiteLayout.setLanguage('gr')"
+               >
+                  Ελληνικά
+               </button>
+            </div>
+         </div>
+         <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg relative">
+            <!-- Blog Feed (Bento-style Grid) -->
+            <div
+               class="lg:col-span-8 lg:col-start-1 grid grid-cols-1 md:grid-cols-2 gap-6"
+               id="blog-feed"
+            >
+               <!-- Article Card 1 (Featured) -->
+               <article
+                  class="md:col-span-2 group cursor-pointer bg-surface rounded-xl overflow-hidden border border-outline-variant/40 hover:shadow-md transition-shadow duration-300 flex flex-col md:flex-row h-full min-h-[300px]"
+               >
+                  <div class="md:w-1/2 h-48 md:h-auto relative overflow-hidden">
+                     <img
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="A brightly lit modern kitchen countertop with fresh Mediterranean ingredients like olive oil, tomatoes, and leafy greens. The lighting is soft and natural, emphasizing a clean, clinical yet approachable wellness aesthetic. High quality, professional photography style."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuABBlOiBv8q36k6q_NQmIqPijIBAVUkOJkV6OdE7qromCdAGGi8wKSDWwG6v7YiLkFNbnGvXgVzMuG4x4kCWik_NDwBaMy7WfelQPlHq8K7Of0BRFVPh_OHJ6RBnVOVAaV3Azco638enaz-HtepjvnGDrSEWHqRf8z-VF6h8zU1kaSmViC-qToNTKuYr7hQu_TALx3CT28f1R3UqqE6JVxiW7OaOfm2jSvYVxbBdGkwPegw_ZyUVT7CXXzAWzUU8likqT_zpTEoaslF"
+                     />
+                  </div>
+                  <div
+                     class="md:w-1/2 p-6 flex flex-col justify-center bg-white relative"
+                  >
+                     <div
+                        class="absolute top-0 left-0 w-full h-1 bg-primary"
+                     ></div>
+                     <div class="flex items-center gap-3 mb-3">
+                        <span
+                           class="bg-primary-fixed/30 text-on-primary-fixed-variant px-3 py-1 rounded-full font-label-sm text-label-sm"
+                        >
+                           <span class="lang-en">Mediterranean Diet</span>
+                           <span class="lang-gr">Μεσογειακή Διατροφή</span>
+                        </span>
+                        <span
+                           class="text-on-surface-variant font-label-sm text-label-sm"
+                        >
+                           <span class="lang-en">Oct 24, 2024</span>
+                           <span class="lang-gr">24 Οκτ, 2024</span>
+                        </span>
+                     </div>
+                     <h2
+                        class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors"
+                     >
+                        <span class="lang-en"
+                           >The Clinical Benefits of Olive Oil in Daily
+                           Nutrition</span
+                        >
+                        <span class="lang-gr"
+                           >Τα Κλινικά Οφέλη του Ελαιολάδου στην Καθημερινή
+                           Διατροφή</span
+                        >
+                     </h2>
+                     <p
+                        class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4 flex-grow"
+                     >
+                        <span class="lang-en"
+                           >Exploring the latest research on polyphenols and
+                           cardiovascular health, separating dietary myths from
+                           clinical facts.</span
+                        >
+                        <span class="lang-gr"
+                           >Εξερευνώντας την πιο πρόσφατη έρευνα για τις
+                           πολυφαινόλες και την καρδιαγγειακή υγεία,
+                           ξεχωρίζοντας τους διατροφικούς μύθους από τα κλινικά
+                           δεδομένα.</span
+                        >
+                     </p>
+                     <div
+                        class="flex items-center text-primary font-label-sm text-label-sm gap-1 mt-auto"
+                     >
+                        <span class="lang-en">Read Article</span>
+                        <span class="lang-gr">Διαβάστε το Άρθρο</span>
+                        <span class="material-symbols-outlined text-sm"
+                           >arrow_forward</span
+                        >
+                     </div>
+                  </div>
+               </article>
+               <!-- Article Card 2 -->
+               <article
+                  class="group cursor-pointer bg-white rounded-xl overflow-hidden border border-outline-variant/40 hover:shadow-md transition-shadow duration-300 flex flex-col"
+               >
+                  <div class="h-48 relative overflow-hidden">
+                     <img
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="A close up of a professional clinical setting showing a nutritionist's desk with a clean white notebook, a pen, and a glass of water. Soft, airy, and trustworthy atmosphere indicating medical authority."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCuPT6dDU74xd0CKSr5zRKZXaju-42h_eXlv6_U11jyo1lYSp3PidLdVkBuNbyadKozQwAKEr_B2FfwJPoc-mkJxUg5cGckgLry0aa0lD2SAqacbK1AM1OIfUe1Evehe_DCwGaAR-aD1qjCDFoBNoKLqkSrZ68ZtKgetwW8AXD47DP5udD-rMziA238jCjjK1CZPVsGyHA_-Ar4t0pyfIDQy1OzfVKQTSB65OcNswcU7iJ8H5mShPwyXcGITfGiehhxBIxw6f2pirw"
+                     />
+                  </div>
+                  <div class="p-5 flex flex-col flex-grow">
+                     <div class="flex items-center gap-3 mb-3">
+                        <span
+                           class="bg-tertiary/10 text-tertiary px-3 py-1 rounded-full font-label-sm text-label-sm"
+                        >
+                           <span class="lang-en">Gut Health</span>
+                           <span class="lang-gr">Υγεία του Εντέρου</span>
+                        </span>
+                        <span
+                           class="text-on-surface-variant font-label-sm text-label-sm"
+                        >
+                           <span class="lang-en">Oct 18, 2024</span>
+                           <span class="lang-gr">18 Οκτ, 2024</span>
+                        </span>
+                     </div>
+                     <h2
+                        class="font-headline-md text-[20px] leading-tight text-on-surface mb-3 group-hover:text-primary transition-colors"
+                     >
+                        <span class="lang-en"
+                           >Understanding the Microbiome</span
+                        >
+                        <span class="lang-gr">Κατανοώντας το Μικροβίωμα</span>
+                     </h2>
+                     <p
+                        class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4 flex-grow"
+                     >
+                        <span class="lang-en"
+                           >How probiotics and prebiotics actively shape
+                           metabolic function and mental clarity.</span
+                        >
+                        <span class="lang-gr"
+                           >Πώς τα προβιοτικά και τα πρεβιοτικά διαμορφώνουν
+                           ενεργά τη μεταβολική λειτουργία και τη διανοητική
+                           διαύγεια.</span
+                        >
+                     </p>
+                  </div>
+               </article>
+               <!-- Article Card 3 (Previously GR only) -->
+               <article
+                  class="group cursor-pointer bg-white rounded-xl overflow-hidden border border-outline-variant/40 hover:shadow-md transition-shadow duration-300 flex flex-col"
+               >
+                  <div class="h-48 relative overflow-hidden">
+                     <img
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="A balanced plate of food featuring lean proteins, whole grains, and vibrant vegetables on a minimalist white table setting. Corporate modern aesthetic, emphasizing health and precision in portion sizes."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4P7y4K9g6VCY3TLymiIT99bhbnTw7vqgaV0qf8i_bsQaOPXjPNDVlDn-5Qv239WDMPYPLyT3WK5gwxAtXQSwpgibEFZAsfSZZkmvOBuI62_xIAdPzz_q2lrl-wf5C8I0cLwMcNsn8kG1lPEZEPFnsSXz2PpAB8hoNOWYBVp_YmuITr-urrueFgieCCYg2X5XFR73-lQiozhB1g9Jkh_YXjIc99wCFjXx0EtV_50uofndpap65MzL_MHbOwbrMLC6UENoy5quEbNkT"
+                     />
+                  </div>
+                  <div class="p-5 flex flex-col flex-grow">
+                     <div class="flex items-center gap-3 mb-3">
+                        <span
+                           class="bg-secondary/10 text-secondary px-3 py-1 rounded-full font-label-sm text-label-sm"
+                        >
+                           <span class="lang-en">Clinical Nutrition</span>
+                           <span class="lang-gr">Κλινική Διατροφή</span>
+                        </span>
+                        <span
+                           class="text-on-surface-variant font-label-sm text-label-sm"
+                        >
+                           <span class="lang-en">Oct 15, 2024</span>
+                           <span class="lang-gr">15 Οκτ, 2024</span>
+                        </span>
+                     </div>
+                     <h2
+                        class="font-headline-md text-[20px] leading-tight text-on-surface mb-3 group-hover:text-primary transition-colors"
+                     >
+                        <span class="lang-en">Type 2 Diabetes Management</span>
+                        <span class="lang-gr">Διαχείριση Διαβήτη Τύπου 2</span>
+                     </h2>
+                     <p
+                        class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4 flex-grow"
+                     >
+                        <span class="lang-en"
+                           >Nutrition strategies to stabilize blood sugar
+                           through personalized plans.</span
+                        >
+                        <span class="lang-gr"
+                           >Στρατηγικές διατροφής για τη σταθεροποίηση του
+                           σακχάρου στο αίμα μέσω εξατομικευμένων πλάνων.</span
+                        >
+                     </p>
+                  </div>
+               </article>
+               <!-- Article Card 4 -->
+               <article
+                  class="group cursor-pointer bg-white rounded-xl overflow-hidden border border-outline-variant/40 hover:shadow-md transition-shadow duration-300 flex flex-col"
+               >
+                  <div
+                     class="p-5 flex flex-col flex-grow relative border-t-4 border-tertiary"
+                  >
+                     <div class="flex items-center gap-3 mb-3">
+                        <span
+                           class="bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full font-label-sm text-label-sm"
+                        >
+                           <span class="lang-en">Research Update</span>
+                           <span class="lang-gr">Ενημέρωση Έρευνας</span>
+                        </span>
+                        <span
+                           class="text-on-surface-variant font-label-sm text-label-sm"
+                        >
+                           <span class="lang-en">Oct 10, 2024</span>
+                           <span class="lang-gr">10 Οκτ, 2024</span>
+                        </span>
+                     </div>
+                     <h2
+                        class="font-headline-md text-[20px] leading-tight text-on-surface mb-3 group-hover:text-primary transition-colors"
+                     >
+                        <span class="lang-en"
+                           >New Guidelines on Vitamin D Synthesis</span
+                        >
+                        <span class="lang-gr"
+                           >Νέες Κατευθυντήριες Γραμμές για τη Σύνθεση της
+                           Βιταμίνης D</span
+                        >
+                     </h2>
+                     <p
+                        class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4 flex-grow"
+                     >
+                        <span class="lang-en"
+                           >A review of the 2024 European protocols regarding
+                           supplementation during winter months.</span
+                        >
+                        <span class="lang-gr"
+                           >Μια ανασκόπηση των ευρωπαϊκών πρωτοκόλλων του 2024
+                           σχετικά με τα συμπληρώματα κατά τους χειμερινούς
+                           μήνες.</span
+                        >
+                     </p>
+                  </div>
+               </article>
+            </div>
+            <!-- Sidebar / Meta -->
+            <aside
+               class="lg:col-span-3 lg:col-start-10 flex flex-col gap-6 sticky top-28 h-fit"
+            >
+               <!-- Categories -->
+               <div
+                  class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/40"
+               >
+                  <h3
+                     class="font-headline-md text-[18px] text-on-surface border-b border-outline-variant/30 pb-2 mb-4"
+                  >
+                     <span class="lang-en">Categories</span>
+                     <span class="lang-gr">Κατηγορίες</span>
+                  </h3>
+                  <ul
+                     class="flex flex-col gap-3 font-body-md text-body-md text-on-surface-variant"
+                  >
+                     <li
+                        class="flex justify-between items-center hover:text-primary cursor-pointer transition-colors"
+                     >
+                        <span class="">
+                           <span class="lang-en">Clinical Nutrition</span>
+                           <span class="lang-gr">Κλινική Διατροφή</span>
+                        </span>
+                        <span class="bg-surface-container p-1 rounded text-xs"
+                           >12</span
+                        >
+                     </li>
+                     <li
+                        class="flex justify-between items-center hover:text-primary cursor-pointer transition-colors"
+                     >
+                        <span class="">
+                           <span class="lang-en">Gut Health</span>
+                           <span class="lang-gr">Υγεία του Εντέρου</span>
+                        </span>
+                        <span class="bg-surface-container p-1 rounded text-xs"
+                           >8</span
+                        >
+                     </li>
+                     <li
+                        class="flex justify-between items-center hover:text-primary cursor-pointer transition-colors"
+                     >
+                        <span class="">
+                           <span class="lang-en">Mediterranean Diet</span>
+                           <span class="lang-gr">Μεσογειακή Διατροφή</span>
+                        </span>
+                        <span class="bg-surface-container p-1 rounded text-xs"
+                           >15</span
+                        >
+                     </li>
+                  </ul>
+               </div>
+               <!-- CMS Indicator -->
+               <div
+                  class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/40 relative overflow-hidden"
+               >
+                  <div class="absolute -right-4 -top-4 opacity-5">
+                     <span
+                        class="material-symbols-outlined"
+                        style="font-size: 100px"
+                        >article</span
+                     >
+                  </div>
+                  <div class="relative z-10 flex flex-col gap-4">
+                     <div>
+                        <p
+                           class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1"
+                        >
+                           <span class="lang-en">System Status</span>
+                           <span class="lang-gr">Κατάσταση Συστήματος</span>
+                        </p>
+                        <div
+                           class="flex items-center gap-2 text-on-surface font-body-md"
+                        >
+                           <span
+                              class="w-2 h-2 rounded-full bg-tertiary"
+                           ></span>
+                           <span class="lang-en">Powered by GitHub Issues</span>
+                           <span class="lang-gr"
+                              >Με την υποστήριξη του GitHub Issues</span
+                           >
+                        </div>
+                     </div>
+                     <hr class="border-outline-variant/30" />
+                     <div>
+                        <p
+                           class="font-body-md text-sm text-on-surface-variant mb-3"
+                        >
+                           <span class="lang-en"
+                              >Owner restricted access for content
+                              management.</span
+                           >
+                           <span class="lang-gr"
+                              >Περιορισμένη πρόσβαση κατόχου για διαχείριση
+                              περιεχομένου.</span
+                           >
+                        </p>
+                        <button
+                           class="w-full flex items-center justify-center gap-2 border border-secondary text-secondary hover:bg-secondary hover:text-on-secondary py-2 px-4 rounded-lg font-label-sm transition-colors"
+                        >
+                           <span class="material-symbols-outlined text-sm"
+                              >login</span
+                           >
+                           <span class="lang-en">Sign In via GitHub</span>
+                           <span class="lang-gr">Σύνδεση μέσω GitHub</span>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </aside>
+         </div>
+      </main>
+      <div id="site-footer"></div>
+      <script src="../assets/js/layout.js"></script>
+   </body>
+</html>

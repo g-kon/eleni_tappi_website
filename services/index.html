@@ -1,138 +1,270 @@
-<!DOCTYPE html><html class="light" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Services - Eleni Tappi Clinical Nutrition</title>
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap&amp;subset=greek,latin" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config" src="../assets/js/tailwind-config.js"></script>
-<link href="../assets/css/site.css" rel="stylesheet">
-<style>
-        .glass-card {
+<!DOCTYPE html>
+<html class="light" lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>Services - Eleni Tappi Clinical Nutrition</title>
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap&amp;subset=greek,latin"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+         rel="stylesheet"
+      />
+      <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+      <script
+         id="tailwind-config"
+         src="../assets/js/tailwind-config.js"
+      ></script>
+      <link href="../assets/css/site.css" rel="stylesheet" />
+      <style>
+         .glass-card {
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.4);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
-        }
-        .bg-pattern {
+         }
+         .bg-pattern {
             background-image: radial-gradient(#dee1ff 1px, transparent 1px);
             background-size: 20px 20px;
-        }
-    </style>
-</head>
-<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col pt-24" data-page="services" data-base="../">
-<div id="site-header"></div>
-<!-- Header Section -->
-<header class="relative py-section-padding px-margin-mobile md:px-gutter max-w-container-max mx-auto overflow-hidden">
-<div class="absolute inset-0 bg-pattern opacity-50 z-0"></div>
-<div class="relative z-10 text-center max-w-3xl mx-auto space-y-stack-md">
-<h1 class="font-headline-xl text-headline-xl text-on-surface">
-<span class="lang-en">Clinical Nutrition Services</span>
-<span class="lang-gr">Υπηρεσίες Κλινικής Διατροφής</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-<span class="lang-en">Expert, evidence-based nutritional guidance tailored to your unique physiological needs. We bridge the gap between medical science and daily wellness.</span>
-<span class="lang-gr">Εξειδικευμένη, επιστημονικά τεκμηριωμένη διατροφική καθοδήγηση προσαρμοσμένη στις μοναδικές φυσιολογικές σας ανάγκες. Γεφυρώνουμε το χάσμα μεταξύ της ιατρικής επιστήμης και της καθημερινής ευεξίας.</span>
-</p>
-</div>
-</header>
-<!-- Main Content -->
-<main class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-padding space-y-section-padding">
-<!-- Bento Grid Layout for Services -->
-<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- Service 1: Personalized Diet Plans -->
-<div class="glass-card rounded-xl p-8 col-span-1 lg:col-span-2 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
-<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
-<div class="flex justify-between items-start mb-6">
-<span class="material-symbols-outlined text-4xl text-primary" data-icon="restaurant_menu">restaurant_menu</span>
-<span class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm">
-<span class="lang-en">Core Service</span>
-<span class="lang-gr">Βασική Υπηρεσία</span>
-</span>
-</div>
-<h3 class="font-headline-lg text-headline-lg mb-4 text-on-surface">
-<span class="lang-en">Personalized Diet Plans</span>
-<span class="lang-gr">Εξατομικευμένα Προγράμματα Διατροφής</span>
-</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">
-<span class="lang-en">Bespoke meal planning designed around your specific metabolic rate, lifestyle constraints, and culinary preferences. Every plan is dynamically adjusted based on continuous progress tracking.</span>
-<span class="lang-gr">Εξατομικευμένος σχεδιασμός γευμάτων με βάση τον μεταβολικό σας ρυθμό, τους περιορισμούς του τρόπου ζωής και τις γαστρονομικές σας προτιμήσεις. Κάθε πρόγραμμα προσαρμόζεται δυναμικά με βάση τη συνεχή παρακολούθηση της προόδου.</span>
-</p>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant">
-<span class="lang-en">Macro &amp; Micro Nutrient Optimization</span>
-<span class="lang-gr">Βελτιστοποίηση Μακροθρεπτικών &amp; Μικροθρεπτικών Συστατικών</span>
-</span>
-</div>
-<div class="flex items-center gap-2 mt-2">
-<span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant">
-<span class="lang-en">Lifestyle Integration</span>
-<span class="lang-gr">Ενσωμάτωση στον Τρόπο Ζωής</span>
-</span>
-</div>
-</div>
-<!-- Service 2: Weight Management -->
-<div class="bg-white rounded-xl p-8 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(140,80,0,0.08)] transition-all duration-300 group">
-<div class="absolute top-0 left-0 w-full h-1 bg-tertiary"></div>
-<div class="mb-6">
-<span class="material-symbols-outlined text-4xl text-tertiary" data-icon="monitor_weight">monitor_weight</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">
-<span class="lang-en">Weight Management</span>
-<span class="lang-gr">Διαχείριση Βάρους</span>
-</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-<span class="lang-en">Sustainable strategies for weight loss, maintenance, or healthy weight gain, avoiding fad diets in favor of metabolic science.</span>
-<span class="lang-gr">Βιώσιμες στρατηγικές για απώλεια, διατήρηση ή υγιή αύξηση βάρους, αποφεύγοντας τις δίαιτες της μόδας προς όφελος της μεταβολικής επιστήμης.</span>
-</p>
-</div>
-<!-- Service 3: Clinical Conditions -->
-<div class="bg-white rounded-xl p-8 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(140,80,0,0.08)] transition-all duration-300">
-<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
-<div class="mb-6">
-<span class="material-symbols-outlined text-4xl text-primary" data-icon="medical_services">medical_services</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">
-<span class="lang-en">Clinical Conditions</span>
-<span class="lang-gr">Κλινικές Παθήσεις</span>
-</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-<span class="lang-en">Medical nutrition therapy for managing diabetes, hypertension, gastrointestinal disorders (IBS, Crohn's), and autoimmune conditions.</span>
-<span class="lang-gr">Ιατρική διατροφική θεραπεία για τη διαχείριση του διαβήτη, της υπέρτασης, των γαστρεντερικών διαταραχών (ΣΕΕ, Νόσος του Crohn) και των αυτοάνοσων παθήσεων.</span>
-</p>
-</div>
-<!-- Service 4: Sports Nutrition -->
-<div class="glass-card rounded-xl p-8 col-span-1 md:col-span-2 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
-<div class="absolute top-0 left-0 w-full h-1 bg-tertiary"></div>
-<div class="flex flex-col md:flex-row gap-8">
-<div class="flex-1">
-<div class="mb-6">
-<span class="material-symbols-outlined text-4xl text-tertiary" data-icon="fitness_center">fitness_center</span>
-</div>
-<h3 class="font-headline-lg text-headline-lg mb-4 text-on-surface">
-<span class="lang-en">Sports Nutrition</span>
-<span class="lang-gr">Αθλητική Διατροφή</span>
-</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">
-<span class="lang-en">Advanced fueling strategies for athletes and active individuals. Enhance performance, accelerate recovery, and optimize body composition through precise nutritional timing.</span>
-<span class="lang-gr">Προηγμένες στρατηγικές τροφοδότησης για αθλητές και δραστήρια άτομα. Βελτιώστε την απόδοση, επιταχύνετε την ανάρρωση και βελτιστοποιήστε τη σύσταση του σώματος μέσω ακριβούς διατροφικού χρονισμού.</span>
-</p>
-<button class="bg-tertiary text-on-tertiary px-6 py-2 rounded-lg font-label-sm text-label-sm hover:bg-on-tertiary-fixed-variant transition-colors">
-<span class="lang-en">Learn More</span>
-<span class="lang-gr">Μάθετε Περισσότερα</span>
-</button>
-</div>
-<div class="flex-1 hidden md:block">
-<div class="bg-cover bg-center w-full h-full rounded-lg min-h-[200px]" data-alt="A professional, well-lit photograph of athletic training equipment alongside healthy fresh food components like berries, nuts, and a protein shaker. The setting is modern and clean, utilizing a bright, airy aesthetic with subtle hints of teal and orange lighting to evoke energy and health. The composition is balanced and highly detailed, reflecting a clinical approach to sports nutrition." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDbqgnDv1dW8F4UHtf1toPeqDxkwHDMOcWG4lZhk1Pybitp8Cm5Q-C6uHEE5cmAOUylWTV7bS9MoEKZEbZzunIo4aDAJzX3XkewOF0ouPDwLOEOINUU4bE0YWHCFFNg9iEYqYFbSPTRKCcGlF2uz23ea-BxyiqjzX9UUE_RWD9uLobXi2PQAKHt7GzODk43QoJ7_6A7HeARgpN2nDD2SVcVIisM3KrJYE1-aJXcRQviJZY8Onrs8qeXSTWkb-RgnEyTRBHnqmH0fNv')"></div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<div id="site-footer"></div>
-<script src="../assets/js/layout.js"></script>
-</body></html>
+         }
+      </style>
+   </head>
+   <body
+      class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col pt-24"
+      data-page="services"
+      data-base="../"
+   >
+      <div id="site-header"></div>
+      <!-- Header Section -->
+      <header
+         class="relative py-section-padding px-margin-mobile md:px-gutter max-w-container-max mx-auto overflow-hidden"
+      >
+         <div class="absolute inset-0 bg-pattern opacity-50 z-0"></div>
+         <div
+            class="relative z-10 text-center max-w-3xl mx-auto space-y-stack-md"
+         >
+            <h1 class="font-headline-xl text-headline-xl text-on-surface">
+               <span class="lang-en">Clinical Nutrition Services</span>
+               <span class="lang-gr">Υπηρεσίες Κλινικής Διατροφής</span>
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">
+               <span class="lang-en"
+                  >Expert, evidence-based nutritional guidance tailored to your
+                  unique physiological needs. We bridge the gap between medical
+                  science and daily wellness.</span
+               >
+               <span class="lang-gr"
+                  >Εξειδικευμένη, επιστημονικά τεκμηριωμένη διατροφική
+                  καθοδήγηση προσαρμοσμένη στις μοναδικές φυσιολογικές σας
+                  ανάγκες. Γεφυρώνουμε το χάσμα μεταξύ της ιατρικής επιστήμης
+                  και της καθημερινής ευεξίας.</span
+               >
+            </p>
+         </div>
+      </header>
+      <!-- Main Content -->
+      <main
+         class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-padding space-y-section-padding"
+      >
+         <!-- Bento Grid Layout for Services -->
+         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Service 1: Personalized Diet Plans -->
+            <div
+               class="glass-card rounded-xl p-8 col-span-1 lg:col-span-2 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
+            >
+               <div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+               <div class="flex justify-between items-start mb-6">
+                  <span
+                     class="material-symbols-outlined text-4xl text-primary"
+                     data-icon="restaurant_menu"
+                     >restaurant_menu</span
+                  >
+                  <span
+                     class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm"
+                  >
+                     <span class="lang-en">Core Service</span>
+                     <span class="lang-gr">Βασική Υπηρεσία</span>
+                  </span>
+               </div>
+               <h3
+                  class="font-headline-lg text-headline-lg mb-4 text-on-surface"
+               >
+                  <span class="lang-en">Personalized Diet Plans</span>
+                  <span class="lang-gr"
+                     >Εξατομικευμένα Προγράμματα Διατροφής</span
+                  >
+               </h3>
+               <p
+                  class="font-body-md text-body-md text-on-surface-variant mb-6"
+               >
+                  <span class="lang-en"
+                     >Bespoke meal planning designed around your specific
+                     metabolic rate, lifestyle constraints, and culinary
+                     preferences. Every plan is dynamically adjusted based on
+                     continuous progress tracking.</span
+                  >
+                  <span class="lang-gr"
+                     >Εξατομικευμένος σχεδιασμός γευμάτων με βάση τον μεταβολικό
+                     σας ρυθμό, τους περιορισμούς του τρόπου ζωής και τις
+                     γαστρονομικές σας προτιμήσεις. Κάθε πρόγραμμα προσαρμόζεται
+                     δυναμικά με βάση τη συνεχή παρακολούθηση της προόδου.</span
+                  >
+               </p>
+               <div class="flex items-center gap-2">
+                  <span
+                     class="material-symbols-outlined text-primary text-xl"
+                     data-icon="check_circle"
+                     >check_circle</span
+                  >
+                  <span
+                     class="font-body-md text-body-md text-on-surface-variant"
+                  >
+                     <span class="lang-en"
+                        >Macro &amp; Micro Nutrient Optimization</span
+                     >
+                     <span class="lang-gr"
+                        >Βελτιστοποίηση Μακροθρεπτικών &amp; Μικροθρεπτικών
+                        Συστατικών</span
+                     >
+                  </span>
+               </div>
+               <div class="flex items-center gap-2 mt-2">
+                  <span
+                     class="material-symbols-outlined text-primary text-xl"
+                     data-icon="check_circle"
+                     >check_circle</span
+                  >
+                  <span
+                     class="font-body-md text-body-md text-on-surface-variant"
+                  >
+                     <span class="lang-en">Lifestyle Integration</span>
+                     <span class="lang-gr">Ενσωμάτωση στον Τρόπο Ζωής</span>
+                  </span>
+               </div>
+            </div>
+            <!-- Service 2: Weight Management -->
+            <div
+               class="bg-white rounded-xl p-8 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(140,80,0,0.08)] transition-all duration-300 group"
+            >
+               <div class="absolute top-0 left-0 w-full h-1 bg-tertiary"></div>
+               <div class="mb-6">
+                  <span
+                     class="material-symbols-outlined text-4xl text-tertiary"
+                     data-icon="monitor_weight"
+                     >monitor_weight</span
+                  >
+               </div>
+               <h3
+                  class="font-headline-md text-headline-md mb-4 text-on-surface"
+               >
+                  <span class="lang-en">Weight Management</span>
+                  <span class="lang-gr">Διαχείριση Βάρους</span>
+               </h3>
+               <p class="font-body-md text-body-md text-on-surface-variant">
+                  <span class="lang-en"
+                     >Sustainable strategies for weight loss, maintenance, or
+                     healthy weight gain, avoiding fad diets in favor of
+                     metabolic science.</span
+                  >
+                  <span class="lang-gr"
+                     >Βιώσιμες στρατηγικές για απώλεια, διατήρηση ή υγιή αύξηση
+                     βάρους, αποφεύγοντας τις δίαιτες της μόδας προς όφελος της
+                     μεταβολικής επιστήμης.</span
+                  >
+               </p>
+            </div>
+            <!-- Service 3: Clinical Conditions -->
+            <div
+               class="bg-white rounded-xl p-8 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(140,80,0,0.08)] transition-all duration-300"
+            >
+               <div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+               <div class="mb-6">
+                  <span
+                     class="material-symbols-outlined text-4xl text-primary"
+                     data-icon="medical_services"
+                     >medical_services</span
+                  >
+               </div>
+               <h3
+                  class="font-headline-md text-headline-md mb-4 text-on-surface"
+               >
+                  <span class="lang-en">Clinical Conditions</span>
+                  <span class="lang-gr">Κλινικές Παθήσεις</span>
+               </h3>
+               <p class="font-body-md text-body-md text-on-surface-variant">
+                  <span class="lang-en"
+                     >Medical nutrition therapy for managing diabetes,
+                     hypertension, gastrointestinal disorders (IBS, Crohn's),
+                     and autoimmune conditions.</span
+                  >
+                  <span class="lang-gr"
+                     >Ιατρική διατροφική θεραπεία για τη διαχείριση του διαβήτη,
+                     της υπέρτασης, των γαστρεντερικών διαταραχών (ΣΕΕ, Νόσος
+                     του Crohn) και των αυτοάνοσων παθήσεων.</span
+                  >
+               </p>
+            </div>
+            <!-- Service 4: Sports Nutrition -->
+            <div
+               class="glass-card rounded-xl p-8 col-span-1 md:col-span-2 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
+            >
+               <div class="absolute top-0 left-0 w-full h-1 bg-tertiary"></div>
+               <div class="flex flex-col md:flex-row gap-8">
+                  <div class="flex-1">
+                     <div class="mb-6">
+                        <span
+                           class="material-symbols-outlined text-4xl text-tertiary"
+                           data-icon="fitness_center"
+                           >fitness_center</span
+                        >
+                     </div>
+                     <h3
+                        class="font-headline-lg text-headline-lg mb-4 text-on-surface"
+                     >
+                        <span class="lang-en">Sports Nutrition</span>
+                        <span class="lang-gr">Αθλητική Διατροφή</span>
+                     </h3>
+                     <p
+                        class="font-body-md text-body-md text-on-surface-variant mb-6"
+                     >
+                        <span class="lang-en"
+                           >Advanced fueling strategies for athletes and active
+                           individuals. Enhance performance, accelerate
+                           recovery, and optimize body composition through
+                           precise nutritional timing.</span
+                        >
+                        <span class="lang-gr"
+                           >Προηγμένες στρατηγικές τροφοδότησης για αθλητές και
+                           δραστήρια άτομα. Βελτιώστε την απόδοση, επιταχύνετε
+                           την ανάρρωση και βελτιστοποιήστε τη σύσταση του
+                           σώματος μέσω ακριβούς διατροφικού χρονισμού.</span
+                        >
+                     </p>
+                     <button
+                        class="bg-tertiary text-on-tertiary px-6 py-2 rounded-lg font-label-sm text-label-sm hover:bg-on-tertiary-fixed-variant transition-colors"
+                     >
+                        <span class="lang-en">Learn More</span>
+                        <span class="lang-gr">Μάθετε Περισσότερα</span>
+                     </button>
+                  </div>
+                  <div class="flex-1 hidden md:block">
+                     <div
+                        class="bg-cover bg-center w-full h-full rounded-lg min-h-[200px]"
+                        data-alt="A professional, well-lit photograph of athletic training equipment alongside healthy fresh food components like berries, nuts, and a protein shaker. The setting is modern and clean, utilizing a bright, airy aesthetic with subtle hints of teal and orange lighting to evoke energy and health. The composition is balanced and highly detailed, reflecting a clinical approach to sports nutrition."
+                        style="
+                           background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCDbqgnDv1dW8F4UHtf1toPeqDxkwHDMOcWG4lZhk1Pybitp8Cm5Q-C6uHEE5cmAOUylWTV7bS9MoEKZEbZzunIo4aDAJzX3XkewOF0ouPDwLOEOINUU4bE0YWHCFFNg9iEYqYFbSPTRKCcGlF2uz23ea-BxyiqjzX9UUE_RWD9uLobXi2PQAKHt7GzODk43QoJ7_6A7HeARgpN2nDD2SVcVIisM3KrJYE1-aJXcRQviJZY8Onrs8qeXSTWkb-RgnEyTRBHnqmH0fNv&quot;);
+                        "
+                     ></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <div id="site-footer"></div>
+      <script src="../assets/js/layout.js"></script>
+   </body>
+</html>
